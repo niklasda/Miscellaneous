@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCFE1FFB-97D9-4591-AD60-81FF79EB2718}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MbUnitDemo.Tests</RootNamespace>
+    <AssemblyName>MbUnitDemo.Tests_2008</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gallio, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\Gallio.dll</HintPath>
+    </Reference>
+    <Reference Include="Gallio.Ambience, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\Gallio.Ambience.dll</HintPath>
+    </Reference>
+    <Reference Include="Gallio35, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\Gallio35.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\MbUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit35, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\MbUnit35.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WatiN.Core, Version=2.0.10.928, Culture=neutral, PublicKeyToken=db7cfd3acb5ad44e, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\WatiN.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assertions\AssertionsDemo.cs" />
+    <Compile Include="Assertions\StructuralEqualityTests.cs" />
+    <Compile Include="Attributes\MoreAttributeTests.cs" />
+    <Compile Include="Attributes\MyDecoratorTests.cs" />
+    <Compile Include="Attributes\CommonAttributesTests.cs" />
+    <Compile Include="DataDriven\CsvDataDrivenTests.cs" />
+    <Compile Include="DataDriven\RandomDataDrivenTests.cs" />
+    <Compile Include="DataDriven\XmlDataDrivenTests.cs" />
+    <Compile Include="Extensions\AssertionsCategoryAttribute.cs" />
+    <Compile Include="Extensions\TheFactory.cs" />
+    <Compile Include="Extensions\MyTestDecoratorAttribute.cs" />
+    <Compile Include="Extensions\AuthoredByAttribute.cs" />
+    <Compile Include="Factories\DynamicTestFactoryDemo.cs" />
+    <Compile Include="Factories\FactoryGenericsClassTests.cs" />
+    <Compile Include="Factories\FactoryTests.cs" />
+    <Compile Include="Factories\StaticTestFactoryDemo.cs" />
+    <Compile Include="ImpersonateTests.cs" />
+    <Compile Include="Join\CombinatorialJoinTests.cs" />
+    <Compile Include="Join\PairwiseJoinTests.cs" />
+    <Compile Include="Join\SequentialJoinTests.cs" />
+    <Compile Include="LifeCycleDemo.cs" />
+    <Compile Include="Logs\AutoCaptureTests.cs" />
+    <Compile Include="Logs\CaptureTests.cs" />
+    <Compile Include="Logs\DiagLogTests.cs" />
+    <Compile Include="Logs\TestLogDemo.cs" />
+    <Compile Include="Mirror\MirrorTests.cs" />
+    <Compile Include="Ordering\AttributeOrderingTests.cs" />
+    <Compile Include="Ordering\TestOrderingTests.cs" />
+    <Compile Include="Parameterize\ParamColumnTests.cs" />
+    <Compile Include="Parameterize\ParamRowTests.cs" />
+    <Compile Include="Parameterize\SeqDataTests.cs" />
+    <Compile Include="Persistence\PersistenceDataTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetryTests.cs" />
+    <Compile Include="Verifiers\CollectionFactoryTests.cs" />
+    <Compile Include="Verifiers\AccessorTests.cs" />
+    <Compile Include="Verifiers\CollectionTests.cs" />
+    <Compile Include="Verifiers\ComparableTests.cs" />
+    <Compile Include="Verifiers\EquatableTests.cs" />
+    <Compile Include="Verifiers\ExceptionTests.cs" />
+    <Compile Include="Verifiers\ImmutableTests.cs" />
+    <Compile Include="Verifiers\ListTests.cs" />
+    <Compile Include="Web\FX\BrowserAttribute.cs" />
+    <Compile Include="Web\FX\BrowserContext.cs" />
+    <Compile Include="Web\FX\BrowserTestFixture.cs" />
+    <Compile Include="Web\FX\BrowserType.cs" />
+    <Compile Include="Web\FX\IBrowserConfiguration.cs" />
+    <Compile Include="Web\Pages\GoogleSearchPage.cs" />
+    <Compile Include="Web\WatinSearchTest.cs" />
+    <Compile Include="Demo\01_AttributeOrderingTests.cs" />
+    <Compile Include="Demo\10_CollectionFactoryTests.cs" />
+    <Compile Include="Demo\09_CollectionTests.cs" />
+    <Compile Include="Demo\11_DynamicTestFactoryDemo.cs" />
+    <Compile Include="Demo\08_ExceptionTests.cs" />
+    <Compile Include="Demo\07_FactoryGenericsClassTests.cs" />
+    <Compile Include="Demo\04_ParamRowTests.cs" />
+    <Compile Include="Demo\05_SequentialJoinTests.cs" />
+    <Compile Include="Demo\02_TestLogDemo.cs" />
+    <Compile Include="Demo\03_WatinSearchTest.cs" />
+    <Compile Include="Demo\06_RandomDataDrivenTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\persons.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\Persons.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\pic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MbUnitDemo\MbUnitDemo_2008.csproj">
+      <Project>{AAFE81F0-E5CE-456E-8F95-972EF4B98CB2}</Project>
+      <Name>MbUnitDemo_2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

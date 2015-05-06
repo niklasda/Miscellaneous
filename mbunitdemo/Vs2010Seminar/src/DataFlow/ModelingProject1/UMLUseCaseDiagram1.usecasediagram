@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="0.3.0.0" Id="a7f52565-254a-476c-ac75-12f75f65e285" name="UMLUseCaseDiagram1" linkedPackageId="f434bde8-eb82-4a07-a524-6cb2f4ef3457" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="d01ed20f-bfae-4877-bb0e-2c0a8ebb63e8">
+      <profileInstance Id="0baf95a0-92cc-442d-ad74-d91b00ff6e02" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="85cab46e-47bd-4577-ab58-d8ec282773f9">
+      <profileInstance Id="4e01777a-b8f4-4156-a1cd-732e6fbee3fa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9ff37fc4-30a5-4270-a634-e9479896829d" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34c3f425-1c66-454c-a10c-8f44f355c057" />
+        <targetEnds>
+          <association Id="662d0083-4720-40ef-a85e-c1ddf542b02e" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ce65afef-656d-404f-8bfa-a215e9c5d526" LastKnownName="UseCase1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ce137ef-749c-49e8-84d4-f50522d8749a" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="20930cec-ae6e-41c4-a9c3-d17f276d8c99" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5fc07480-9149-4c30-ab15-0a598c9f0fa4" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="34ea1a49-12fa-4f03-bc8c-3f5aeb44ab77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c669be26-7095-42f3-9384-279e31ccb675" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce65afef-656d-404f-8bfa-a215e9c5d526" name="UseCase1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="72747d41-4166-4870-ab22-7eeb0f4c1269" />
+        <extendedCases>
+          <extend Id="a75ecd60-31d3-4bd3-acce-d39e13e95610">
+            <useCaseMoniker Id="546461e5-3244-4a3c-9f1d-5af1dc564c77" LastKnownName="UseCase2" />
+            <elementDefinition Id="600eb878-9381-4142-a29b-ea996cdff16a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="546461e5-3244-4a3c-9f1d-5af1dc564c77" name="UseCase2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f14944ce-0122-4143-8bd0-ab1406be3a97" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="af079562-9244-4ccb-af8a-7dd0e0739257" name="Actor2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="39b671ed-4458-461e-a69c-bec82d93e7d3" />
+        <targetEnds>
+          <association Id="1670747d-a625-476d-91bf-593e30753f4b" isDerived="false" sourceEndRoleName="Actor2" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="546461e5-3244-4a3c-9f1d-5af1dc564c77" LastKnownName="UseCase2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de5570dc-9b2d-436d-a123-98dc421bfcf4" name="Actor2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a4771514-e9c8-452a-bbd6-b380b9fd6fe4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7068d8a1-75fd-482a-a8f4-9ab115bf1202" name="UseCase2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="447a64cd-016d-4d6b-bf9e-f286db9a9ede" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17479000-428b-4e0a-8245-630514c38087" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f434bde8-eb82-4a07-a524-6cb2f4ef3457" name="ModelingProject1">
+    <elementDefinition Id="55e73c0f-534e-4a49-b8e4-3458c370786c" />
+  </package>
+</useCaseModelRoot>

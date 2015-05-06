@@ -1,0 +1,52 @@
+﻿<Activity mc:Ignorable="sap" x:Class="ClassLibrary1.WF.Activity1" this:Activity1.count="1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:s1="clr-namespace:System;assembly=mscorlib" xmlns:s2="clr-namespace:System;assembly=System" xmlns:s3="clr-namespace:System;assembly=System.Xml" xmlns:s4="clr-namespace:System;assembly=System.Core" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg4="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.DataSetExtensions" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:this="clr-namespace:ClassLibrary1.WF" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="count" Type="InArgument(x:Int32)" />
+    <x:Property Name="theStuff" Type="OutArgument(scg:ICollection(x:String))" />
+  </x:Members>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+  <Sequence sad:XamlDebuggerXmlReader.FileName="C:\Projects\MbUnitDemo\Vs2010Seminar\src\DataFlow\ClassLibrary1\WF\Activity1.xaml" sap:VirtualizedContainerService.HintSize="486,847">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:ICollection(x:String)" Name="MyStuff" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="464,58">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:ICollection(x:String)">[MyStuff]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:ICollection(x:String)">[New List(Of String)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <While sap:VirtualizedContainerService.HintSize="464,218" Condition="[count &gt; 1]">
+      <Assign sap:VirtualizedContainerService.HintSize="438,100">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">[count - 1]</InArgument>
+        </Assign.Value>
+      </Assign>
+    </While>
+    <AddToCollection x:TypeArguments="x:String" Collection="[MyStuff]" DisplayName="AddToCollection&lt;String&gt;" sap:VirtualizedContainerService.HintSize="464,22" Item="item1" />
+    <ForEach x:TypeArguments="x:String" DisplayName="ForEach&lt;String&gt;" sap:VirtualizedContainerService.HintSize="464,207" Values="[MyStuff]">
+      <ActivityAction x:TypeArguments="x:String">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+        </ActivityAction.Argument>
+        <WriteLine sap:VirtualizedContainerService.HintSize="257,100" Text="[&quot;Hello &quot; &amp; item]" />
+      </ActivityAction>
+    </ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="464,58">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:ICollection(x:String)">[theStuff]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:ICollection(x:String)">[MyStuff]</InArgument>
+      </Assign.Value>
+    </Assign>
+  </Sequence>
+</Activity>

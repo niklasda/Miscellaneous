@@ -1,0 +1,11 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="298" Width="526" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid Margin="209,13,13,14" Name="dataGrid1" ItemsSource="{Binding}" />
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="12,12,0,0" Name="datePicker1" VerticalAlignment="Top" Width="180" SelectedDateChanged="datePicker1_SelectedDateChanged" />
+        <Calendar Height="170" HorizontalAlignment="Left" Margin="12,43,0,0" Name="calendar1" VerticalAlignment="Top" Width="180" SelectedDatesChanged="calendar1_SelectedDatesChanged" />
+        <Button Content="Long running" HorizontalAlignment="Left" Margin="64,222,0,14" Name="button1" Width="99" Click="button1_Click" />
+    </Grid>
+</Window>

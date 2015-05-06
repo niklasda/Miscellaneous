@@ -1,0 +1,175 @@
+Plugins already available
+--------------------------
+ReSharper 5
+VisualSVN 1.7.7
+MS PowerCommands 10
+PEx 0.19
+MbUnit 3.1
+AnkhSVN 2.1
+TestDriven .NET 3.0
+
+IronRuby 0.9x
+http://ironruby.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=33305
+ 
+IronPython 2.6
+http://ironpython.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=28125
+
+IIS 7 = Server 2008 and Vista
+IIS 7.5 = Server 2008 R2 and Windows 7
+
+
+
+Stuff IN
+--------
+floating windows
+CodedUI Tests
+project dependencies -> dependency graph
+run all impacted tests, trace and test impact
+breakpoint groups
+code metrics
+
+Quick Search
+CTRL+ \
+TDD Ctrl+Shift+J
+Ctrl+. SmartTag
+
+record testcases, repro
+
+http://blogs.msdn.com/somasegar/archive/2009/11/03/developing-for-the-web-using-vs-2010-and-net-4.aspx
+---
+HTML, ASP.NET, JS Snippets
+JS intellisense
+MsDeploy
+Starter Web App for ASP.NET 4 (with Master CSS, Menues, Login, JQuery)
+Better support for CSS 2.1
+URL routing in ASP.NET WebForms 4 (not only MVC). Good for SEO
+
+
+http://www.hanselman.com/blog/VisualStudio2010Beta2.aspx
+---
+Plugins with MEF and WPF
+DLR and COM. optional parameters
+
+
+http://weblogs.asp.net/scottgu/archive/2009/10/22/vs-2010-code-intellisense-improvements-vs-2010-and-net-4-0-series.aspx
+Intellisense Improvements, Now actually *word* Filters in stead of Word* jumping
+Also means type searvhing
+PascalCase intellisense .PIC => PageIndexChanged
+
+http://weblogs.asp.net/scottgu/archive/2009/10/29/add-reference-dialog-improvements-vs-2010-and-net-4-0-series.aspx
+---
+The Add References dialog open the Project Tab first (and COM and .NET tabs load asynch)
+
+http://weblogs.asp.net/scottgu/archive/2009/10/21/searching-and-navigating-code-in-vs-2010-vs-2010-and-net-4-0-series.aspx
+The NavigateTo Dialog (ReSharper like) Ctrl+,
+use space ' ' to serach for several keywords
+Pascal Case Aware AMS fins ActionMethodSelector
+View Call Hierarchy
+NavigateTo contextMenu 
+Highlighted References Navigate them with  (Ctrl-Shift-up/down)
+
+
+http://blogs.msdn.com/mwinkle/archive/2009/10/20/wf4-designer-enhancements-in-vs-2010-beta-2.aspx
+WF4 Designer Enhancements in VS 2010 Beta 2
+
+
+Whats new in ASP.NET 4
+http://www.asp.net/learn/whitepapers/aspnet4/default.aspx
+
+EF4
+DataServices 4
+
+
+Visual Studio 2010 and .NET Framework 4 Beta 2 Walkthroughs
+http://msdn.microsoft.com/en-us/vstudio/dd441784.aspx
+
+
+VisualStudio 2010 TrainingKit
+http://www.managed-world.com/archive/2009/10/20/visual-studio-2010-beta-2-training-kit-published.aspx
+
+Parallel debugger
+http://channel9.msdn.com/posts/DanielMoth/Parallel-Debugging-in-Visual-Studio-2010-MSDN-mag-companion/
+
+http://www.wintellect.com/CS/blogs/jrobbins/archive/2009/10/19/vs-2010-beta-2-intellitrace-in-depth-first-look.aspx
+IntelliTrace (Historical Debugging)
+
+Modelling Project in VisualStudio Architect Edition
+UML and NDepend
+
+Database Projects are now in Pro
+Not all featrues in Pro thoguh
+
+TFS in more (All VS) MSDN subscriptions, and can be installed on client OS and Domain Controllers
+
+
+http://weblogs.asp.net/scottgu/archive/2009/10/26/wpf-4-vs-2010-and-net-4-0-series.aspx
+---
+New WPF 4 controls like DataGrid, DatePicker, Calendar
+OutOfBand: Bag O'Tricks ColorPicker, NumericUpDown, TreeMapPanel, ListPager
+OutOfBand: Ribbon
+Pixel Shader 3 Support
+Animation Easing Function
+WPF text stack now supports aliased, grayscale, ClearType
+Custom Dictionaries for WPF spell checker
+Windows 7 Multitouch Support in WPF
+Other Windows 7 features
+
+Side by Side Support with VS 2008
+
+Online Extension Gallery
+
+
+VS 2010 Product Line SKU Simplifications
+    * Visual Studio Express: Free Express SKUs for Web, VB, C#, and C++ 
+
+    * Visual Studio 2010 Professional with MSDN: Professional development tools as you are used to today with the addition of source control integration, bug tracking, build automation, and more. It also includes 50 hours/month of Azure cloud computing. 
+
+    * Visual Studio 2010 Premium with MSDN: Premium has everything in Professional plus advanced development tools (including richer profiling and debugging, code coverage, code analysis and testing prioritization), advanced database support, UI testing, and more.  Rather than buying multiple “Team” SKUs like you would with VS 2008, you can now get this combination of features in one box with VS 2010. It also includes 100 hours/month of Azure cloud computing. 
+
+    * Visual Studio 2010 Ultimate with MSDN: Ultimate has everything in Premium plus additional advanced features for developers, testers, and architects including features like Intellitrace (formerly Historical Debugging), the new architecture tools (UML, discovery), test lab management, etc.  It also includes 250 hours/month of Azure cloud computing. 
+    
+    
+ covariance/contravariance in C# 4.0 talk.
+ 
+
+Stuff OUT
+---------
+Azure (Use Microsoft Web Platform Installer 2.0)
+Reactive Framework (http://channel9.msdn.com/shows/Going+Deep/Expert-to-Expert-Brian-Beckman-and-Erik-Meijer-Inside-the-NET-Reactive-Framework-Rx/)
+
+
+Scenario
+-----------------
+Use TDD
+Create Compact DB   (add item -> Local Database)
+Create classes
+Generate tables etc from code
+fill tables from cOde
+Use PLinq to fetch data
+Expose data in a MVC Site or DynData
+reverse eng a Model in modelling project
+Make also a WPF client with Win7 features
+Standalone Silverlight client 
+
+
+Get a workflow in, parallel workflow? debugging?
+
+Synopsis
+-----------------------
+
+Silverlight 3
+F#, 
+managed extensions, 
+AJAX
+Dynamic Data.
+
+
+lokala SQL Server compact databaser, 
+EF4, Entity Framework
+
+Intellisense i test-runnern
+CodeContracts, 
+underlättar testning och TDD.
+
+Slutligen tittar vi på ParallelFX, 
+förbättningarna i debuggern för att underlätta felsökning i dessa scenario.

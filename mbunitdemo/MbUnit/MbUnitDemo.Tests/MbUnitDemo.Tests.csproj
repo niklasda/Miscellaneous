@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0903FEE9-0989-4F70-99A6-9EA9FEC4C7DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MbUnitDemo.Tests</RootNamespace>
+    <AssemblyName>MbUnitDemo.Tests</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gallio, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\Gallio.dll</HintPath>
+    </Reference>
+    <Reference Include="Gallio.Ambience, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\Gallio.Ambience.dll</HintPath>
+    </Reference>
+    <Reference Include="Gallio35, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\Gallio35.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\MbUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit35, Version=3.1.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\MbUnit35.dll</HintPath>
+    </Reference>
+    <Reference Include="NBehave.Spec.Framework, Version=0.4.0.133, Culture=neutral, PublicKeyToken=d421feca0f4a05f6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\NBehave.Spec.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NBehave.Spec.MbUnit, Version=0.4.0.133, Culture=neutral, PublicKeyToken=d421feca0f4a05f6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\NBehave.Spec.MbUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WatiN.Core, Version=2.0.10.928, Culture=neutral, PublicKeyToken=db7cfd3acb5ad44e, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refbin\WatiN.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Persistence\PersistenceDataTests.cs" />
+    <Compile Include="Assertions\AssertionsDemo.cs" />
+    <Compile Include="Attributes\MyDecoratorTests.cs" />
+    <Compile Include="BDD\Extensions\BddExtensions.cs" />
+    <Compile Include="ImpersonateTests.cs" />
+    <Compile Include="Logs\AutoCaptureTests.cs" />
+    <Compile Include="Parameterize\SeqDataTests.cs" />
+    <Compile Include="DataDriven\RandomDataDrivenTests.cs" />
+    <Compile Include="Extensions\MyTestDecoratorAttribute.cs" />
+    <Compile Include="Logs\DiagLogTests.cs" />
+    <Compile Include="Ordering\AttributeOrderingTests.cs" />
+    <Compile Include="Ordering\ParallellTests.cs" />
+    <Compile Include="RetryTests.cs" />
+    <Compile Include="Ordering\RepeatedTests.cs" />
+    <Compile Include="Ordering\TestOrderingTests.cs" />
+    <Compile Include="Ordering\MultipleCultureTests.cs" />
+    <Compile Include="Parameterize\ColumnTests.cs" />
+    <Compile Include="Parameterize\MultipleCultureTests.cs" />
+    <Compile Include="Parameterize\RowTests.cs" />
+    <Compile Include="Rolling\YourOwn.cs" />
+    <Compile Include="Tx\TxRegistryOpTests.cs" />
+    <Compile Include="Verifiers\ComparableTests.cs" />
+    <Compile Include="Verifiers\CollectionTests.cs" />
+    <Compile Include="Verifiers\AccessorTests.cs" />
+    <Compile Include="Logs\CaptureTests.cs" />
+    <Compile Include="Extensions\AssertionsCategoryAttribute.cs" />
+    <Compile Include="Extensions\NiklasAuthorAttribute.cs" />
+    <Compile Include="IsolationDemo.cs" />
+    <Compile Include="Factories\FactoryGenericsClassTests.cs" />
+    <Compile Include="Factories\FactoryGenericsTests.cs" />
+    <Compile Include="Parameterize\EnumDataTests.cs" />
+    <Compile Include="LifeCycleDemo.cs" />
+    <Compile Include="Attributes\StandardAttributesTests.cs" />
+    <Compile Include="Join\SequentialJoinTests.cs" />
+    <Compile Include="Join\CombinatorialJoinTests.cs" />
+    <Compile Include="Join\OnewiseAttribute.cs" />
+    <Compile Include="Join\OnewiseJoinAttributeTests.cs" />
+    <Compile Include="Factories\FactoryTests.cs" />
+    <Compile Include="Join\PairwiseJoinTests.cs" />
+    <Compile Include="Assertions\StructuralEqualityTests.cs" />
+    <Compile Include="Verifiers\ListTests.cs" />
+    <Compile Include="Attributes\MoreAttributeTests.cs" />
+    <Compile Include="Verifiers\ImmutableTests.cs" />
+    <Compile Include="DataDriven\CsvDataDrivenTests.cs" />
+    <Compile Include="Factories\DynamicTestFactoryDemo.cs" />
+    <Compile Include="Verifiers\EquatableTests.cs" />
+    <Compile Include="Verifiers\ExceptionTests.cs" />
+    <Compile Include="Tx\DbRollbackTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factories\StaticTestFactoryDemo.cs" />
+    <Compile Include="Logs\TestLogDemo.cs" />
+    <Compile Include="Tx\TxFileOpTests.cs" />
+    <Compile Include="DataDriven\XmlDataDrivenTests.cs" />
+    <Compile Include="WatiN\WatinTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MbUnitDemo\MbUnitDemo.csproj">
+      <Project>{ED9941A8-BC77-49D4-A9C5-028C312464A2}</Project>
+      <Name>MbUnitDemo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\pic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Persons.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\persons.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

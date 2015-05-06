@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPrototype1", "SilverlightPrototype1\SilverlightPrototype1.csproj", "{5B638999-333D-4294-89A2-AFB4A83D42A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPrototype1Screens", "SilverlightPrototype1\SilverlightPrototype1Screens\SilverlightPrototype1Screens.csproj", "{86C4668E-D246-4C52-95AB-D826E3BC3604}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B638999-333D-4294-89A2-AFB4A83D42A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B638999-333D-4294-89A2-AFB4A83D42A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B638999-333D-4294-89A2-AFB4A83D42A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B638999-333D-4294-89A2-AFB4A83D42A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C4668E-D246-4C52-95AB-D826E3BC3604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C4668E-D246-4C52-95AB-D826E3BC3604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C4668E-D246-4C52-95AB-D826E3BC3604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C4668E-D246-4C52-95AB-D826E3BC3604}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

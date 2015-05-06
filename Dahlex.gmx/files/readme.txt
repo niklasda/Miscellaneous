@@ -1,0 +1,1 @@
+http://wiki.yoyogames.com/index.php/GameMaker:Studio_Tutorials

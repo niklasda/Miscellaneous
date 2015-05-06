@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55FC02E5-3A95-40B8-8EEE-F1B07452ED7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HarnessWinForms</RootNamespace>
+    <AssemblyName>HarnessWinForms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Desktop.cs" />
+    <Compile Include="Exceptions\AmbiguousNameException.cs" />
+    <Compile Include="Exceptions\ControlNotEnabledException.cs" />
+    <Compile Include="Exceptions\ControlNotVisibleException.cs" />
+    <Compile Include="Exceptions\FormsTestAssertionException.cs" />
+    <Compile Include="Exceptions\KeyboardSequenceException.cs" />
+    <Compile Include="Exceptions\NoSuchControlException.cs" />
+    <Compile Include="ExpectedModalResult.cs" />
+    <Compile Include="FileAssert.cs" />
+    <Compile Include="Finders\Finder.cs" />
+    <Compile Include="Finders\FormFinder.cs" />
+    <Compile Include="GeneratedTesters\ButtonTester.cs" />
+    <Compile Include="GeneratedTesters\CheckBoxTester.cs" />
+    <Compile Include="GeneratedTesters\CheckedListBoxTester.cs" />
+    <Compile Include="GeneratedTesters\ComboBoxTester.cs" />
+    <Compile Include="GeneratedTesters\ComponentTester.cs" />
+    <Compile Include="GeneratedTesters\ControlTester.cs" />
+    <Compile Include="GeneratedTesters\LabelTester.cs" />
+    <Compile Include="GeneratedTesters\LinkLabelTester.cs" />
+    <Compile Include="GeneratedTesters\ListBoxTester.cs" />
+    <Compile Include="GeneratedTesters\ListViewTester.cs" />
+    <Compile Include="GeneratedTesters\PanelTester.cs" />
+    <Compile Include="GeneratedTesters\RadioButtonTester.cs" />
+    <Compile Include="GeneratedTesters\RichTextBoxTester.cs" />
+    <Compile Include="GeneratedTesters\TabControlTester.cs" />
+    <Compile Include="GeneratedTesters\TextBoxTester.cs" />
+    <Compile Include="GeneratedTesters\ToolBarTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripButtonTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripComboBoxTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripDropDownButtonTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripItemTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripMenuItemTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripSplitButtonTester.cs" />
+    <Compile Include="GeneratedTesters\ToolStripTextBoxTester.cs" />
+    <Compile Include="GeneratedTesters\TreeViewTester.cs" />
+    <Compile Include="GenericTesters\ControlTester.cs" />
+    <Compile Include="GenericTesters\ReflectionTester.cs" />
+    <Compile Include="GenericTesters\Tester.cs" />
+    <Compile Include="GenericTesters\ToolStripItemTester.cs" />
+    <Compile Include="IKeepAlive.cs" />
+    <Compile Include="InputDevices\Key.cs" />
+    <Compile Include="InputDevices\KeyboardControl.cs" />
+    <Compile Include="InputDevices\KeyboardController.cs" />
+    <Compile Include="InputDevices\MouseControl.cs" />
+    <Compile Include="InputDevices\MouseController.cs" />
+    <Compile Include="HarnessWinFormsTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenCapture\ImageFormatHandler.cs" />
+    <Compile Include="ScreenCapture\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenCapture\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapture\NativeMethods.cs" />
+    <Compile Include="ScreenCapture\Program.cs" />
+    <Compile Include="ScreenCapture\ScreenCapture.cs" />
+    <Compile Include="SendKey\AlternateSendKeys.cs" />
+    <Compile Include="SendKey\ISendKeys.cs" />
+    <Compile Include="SendKey\ISendKeysFactory.cs" />
+    <Compile Include="SendKey\ISendKeysParser.cs" />
+    <Compile Include="SendKey\ISendKeysParserFactory.cs" />
+    <Compile Include="SendKey\ISendKeysParserGroup.cs" />
+    <Compile Include="SendKey\SendKeys.cs" />
+    <Compile Include="SendKey\SendKeysFactory.cs" />
+    <Compile Include="SendKey\SendKeysParser.cs" />
+    <Compile Include="SendKey\SendKeysParserFactory.cs" />
+    <Compile Include="SendKey\SendKeysParserGroup.cs" />
+    <Compile Include="Testers\CheckBoxTester.cs" />
+    <Compile Include="Testers\CheckedListBoxTester.cs" />
+    <Compile Include="Testers\ComboBoxTester.cs" />
+    <Compile Include="Testers\FileDialogTester.cs" />
+    <Compile Include="Testers\FormTester.cs" />
+    <Compile Include="Testers\LinkLabelTester.cs" />
+    <Compile Include="Testers\ListBoxTester.cs" />
+    <Compile Include="Testers\ListViewTester.cs" />
+    <Compile Include="Testers\MenuItemTester.cs" />
+    <Compile Include="Testers\MessageBoxTester.cs" />
+    <Compile Include="Testers\ModalFormTester.cs" />
+    <Compile Include="Testers\New\DateTimePickerTester.cs" />
+    <Compile Include="Testers\New\ExtendedFormTester.cs" />
+    <Compile Include="Testers\New\MenuStripTester.cs" />
+    <Compile Include="Testers\New\ScrollBarTester.cs" />
+    <Compile Include="Testers\New\TableLayoutTester.cs" />
+    <Compile Include="Testers\New\TabPageTester.cs" />
+    <Compile Include="Testers\New\ToolStripItemTester2.cs" />
+    <Compile Include="Testers\New\ToolStripMenuItemTester2.cs" />
+    <Compile Include="Testers\New\ToolStripTester.cs" />
+    <Compile Include="Testers\New\UpDownTester.cs" />
+    <Compile Include="Testers\New\WebBrowserTester.cs" />
+    <Compile Include="Testers\OpenFileDialogTester.cs" />
+    <Compile Include="Testers\RadioButtonTester.cs" />
+    <Compile Include="Testers\RichTextBoxTester.cs" />
+    <Compile Include="Testers\SaveFileDialogTester.cs" />
+    <Compile Include="Testers\TabControlTester.cs" />
+    <Compile Include="Testers\TextBoxTester.cs" />
+    <Compile Include="Testers\ToolBarButtonTester.cs" />
+    <Compile Include="Testers\ToolBarTester.cs" />
+    <Compile Include="Testers\ToolStripComboBoxTester.cs" />
+    <Compile Include="Testers\ToolStripDropDownButtonTester.cs" />
+    <Compile Include="Testers\ToolStripSplitButtonTester.cs" />
+    <Compile Include="Testers\ToolStripTextBoxTester.cs" />
+    <Compile Include="Testers\TreeViewTester.cs" />
+    <Compile Include="Util\EventHelper.cs" />
+    <Compile Include="Util\Strings.cs" />
+    <Compile Include="Util\Types.cs" />
+    <Compile Include="Util\Win32.cs" />
+    <Compile Include="Util\WindowHandle.cs" />
+    <Compile Include="Win32Interop\ISendKeyboardInput.cs" />
+    <Compile Include="Win32Interop\SendInputFlags.cs" />
+    <Compile Include="Win32Interop\SendKeyboardInput.cs" />
+    <Compile Include="Win32Interop\VirtualKeyCodes.cs" />
+    <Compile Include="Win32Interop\VirtualKeyScan.cs" />
+    <Compile Include="Win32Interop\WindowSpecificSendKeyboardInput.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScreenCapture\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

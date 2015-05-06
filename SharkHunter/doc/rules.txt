@@ -1,0 +1,99 @@
+
+1. Malmö
+1.1 central station
+1.2 home, your apartment
+1.3 hospital (no use to go there???, since you end up here automatically when hurt)
+
+2. Simrishamn
+2.1 railroad station
+2.2 fish-rensery, earn 10€ per hour (fishery???, fish-guttery???)
+2.3 harbour, dive for gold, requires diving equipment to succeed, whatch out for sharks
+
+3. Laholm
+3.1 train station
+3.2 factory, what factory???, earn 15€ per hour
+3.3 sheap hotel, sleep here for 8€ per night
+
+4. Karlskrona
+4.1 railroad station
+4.2 general store, buy diving equipment for 200€ (tripples air time, possible to re-use)
+4.3 regular hotel, sleep here for 12€ per night
+
+5. Klippan
+5.1 train station
+5.2 small town bank, borrow money between 10€ - 100€ (if you have not been to jail), pay back in 3 days
+5.3 big dump, possible to find diving graded equipment (doubles diving time), or get attacked by low-lifes
+
+6. Vittsjö
+6.1 train station
+6.2 sleazy country pub, play poker machine och get into trouble with local drunkards
+6.3 religious convent of pingst friends??? get in contact with ancestors (useless) or get screwed
+
+
+the game is turn-based and one turn is one hour.
+
+when diving a turn is one minute, and it's possible to dive for 10 minutes without equioment???
+
+you can travel to any place from any other place in one??? hour.
+
+Game-day starts at 07:00 at home, at a hotel or in the hospital.
+
+Game-day end at 23:00 at home or at a hotel or when struck down by low-lifes.
+
+If you are now safely in-doors at 23:00 you might be attacked, robbed, killed, abducted, get into drugs etc.
+
+Does the game end when put in jail?
+
+Does it cost to travel? Free if you go back the next hour.
+
+
+
+Hej mannen!
+
+Ok, vi kör på Engelska. Jag ska försöka översätta och förklara lite tydligare.
+ 
+1. Malmö
+1.1 central station (centralstationerna används för att åka mellan olika städer.  En lista över möjliga resmål och priser kommer upp när man går till en centralstation).
+1.2 home, your apartment (Här sover man. Om man inte lyckas ta sig hit (eller till ett hotel) innan 23.00 börjar ens mätare gå ner och man kan råka ut för ett överfall (typ Dahlex). Man kan gå vinnande ur ett överfall (och få lite pengar) eller förlora och då blir man av med 50% av sina pengar och sin health och hamnar på sjukhuset. När man sover (hemma eller på hotel ökar ens värden med 20% under natten)
+1.3 hospital (När man går hit är det en bild på läkare med texten: "You are healthy. Come back if you get hurt!". Ibland hamnar man här efter ett slagsmål. Tre gånger och spelet är slut "You die from loss of blood and damaged organs!") 
+ 
+2. Simrishamn
+2.1 railroad station (samma funktion som en centralstation)
+2.2 fish-rensery, earn 15€ per hour (fishery???, fish-guttery???) (Vet faktiskt inte, men Fishery låter bra! Här "byter" man alltså in stålar mot tid. När man kommer hit är det en bild med texten: "Would you like to work? (vilket betyder att man får jobba) eller "No work today" (vilket betyder att det är kört. Att den senare dyker upp är 20% eller 80% ifall man har över 1000:- på fickan)
+2.3 harbour, dive for gold, requires diving equipment to succeed, whatch out for sharks (Här ska vi arbeta fram en aktionsekvens med scrollande bild och lite sköna haj-sprites!)
+ 
+3. Laholm (Martin kanske kan berätta mer, för att få lite lokalfärg i spelet)
+3.1 train station (samma som tidigare)
+3.2 factory, what factory???, earn 10€ per hour (Sweatshop tar vi. "Would Make shoes for infamous American footwear producer?"/"Workers on strike. No work today blackfoot!"
+3.3 cheap hotel, sleep here for 8€ per night (som att sova hemma. Det gäller att komma i tid)
+ 
+4. Karlskrona
+4.1 railroad station (som tidigare)
+4.2 general store, buy diving equipment for 200€ (tripples air time, possible to re-use) (gör livet längre under vattenytan. Förlänger Air-mätaren när man är under vattnet. När man väl har köpt "diving equipment" så kan man inte göra det igen. Markeras med en liten symbol bredvid Dylans fagra anlete.
+4.3 regular hotel, sleep here for 12€ per night (som att sova hemma. Det gäller att komma i tid)
+ 
+5. Klippan
+5.1 train station
+5.2 small town bank, borrow money between 20€ - 200€ (if you have not been to jail), pay back in 3 days. Bild på svettig bankir och två möjliga texter (Do you want to borrow money boy? (virility över 50)/Please leave before I call the cops (virility under 50 eller suttit inne tidigare)
+(Om man inte betalar tillbaka i tid så blir man hämtad av polisen (grymt svår variant av Dahlex!) och blir av med pengarna (som man är skyldig) och 50% av sina andra mätarvärden)
+5.3 big dump, possible to find diving graded equipment (doubles diving time), or get attacked by low-lifes (Här avgör ens "virility" om det blir en Dahlexmatch. Över 50% och man hittar diving equipment. Under 50% och man hamnar i en Dahlex-fight. Vinner man får man 100:-, men förlorar man blir man av med 50% av sina pengar + halverar sina mätare.
+6. Vittsjö
+6.1 train station
+6.2 sleazy country pub, get laid och get into trouble with local drunkards (om man går in här med över 50 i virility kommer en bild på en ful gumma som säger "Sleep with me for 50:-? Om man svarar ja stannar man över natten, får pengarna men blir av med 30% av sin virility. Nej så kommer "trouble with local drunkards". En hård sjöbuse säger "Are you looking for trouble boy?" NO, så händer inget, men man blir av med 20 virility. YES så blir det en bild på rök och knynävar. Har man över 60 i virility så vinner man och får maximal viriity och 100:-. Om man har under 60 får man HEALTH halverad och hamnar på Hospital i Malmö.
+6.3 religious convent of pingst friends??? get in contact with ancestors (useless) or get screwed. Om man har över 50 i virility och health får man erbjudandet "Do you want to get in contact with your ancestors? Yes: "There is a big treasure in the ocean outside Simrishamn! No. "Your ancestors does not want to talk to you either!" (Detta kan bara hända en gång). Annars kan man bara lägga pengar i kollekten. Valfritt belopp, men inget händer.
+ 
+
+the game is turn-based and one turn is one hour.
+ 
+when diving a turn is one minute, and it's possible to dive for 10 minutes without equioment??? Yes, it sounds strange but that is the way it is. 30 minutes with equipment!
+ 
+you can travel to any place from any other place in one??? hour. Travel is always one hour but the prices differ 10-30 depending on how far it is.
+ 
+Game-day starts at 07:00 at home, at a hotel or in the hospital.
+ 
+Game-day end at 23:00 at home or at a hotel or when struck down by low-lifes.
+ 
+If you are now safely in-doors at 23:00 you might NOT be attacked. If you are not indoors you will be attacked by a gang of bikers (medelsvår Dahlex). A win gets you to morning 07:00 at central station (in the town you are in) and a loss will put you in the hospital with 50% off all your meters and money.
+ 
+Does the game end when put in jail? YES
+

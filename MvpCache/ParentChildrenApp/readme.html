@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Readme</title>
+</head>
+<body>
+    Vi har en Model-View-Presenter-lösning.<br />
+    <br />
+    <strong>Databasen</strong><br />
+    Databasen är Caché (en post-relationsdatabas), eftersom ingen antas ha den installerad
+    kan man snabbt, med hjälp av spring.net byta ut den mot en mock-databas (med hårdkodad
+    data).<br />
+    <br />
+    <strong>Presenter</strong><br />
+    Presenter projektet innehåller presenters så klart. presenterar data från Model
+    i View.<br />
+    Presentern använder spring.net för att välja databastyp.&nbsp;<br />
+    <br />
+    <strong>View</strong><br />
+    View, webprojektet innehåller konfigurationen för spring.net och databaskoppling<br />
+    aspx sidorna anropar bara presenters<br />
+    <br />
+    <strong>Model</strong><br />
+    Model innehåller mappen Generated, som innehåller kod genererad av Cachés kodgenerator<br />
+    Entities innehåller data för databindningen, de får sin data från objekter i Generated<br />
+    Model innehåller också interfacet som implementeras av databashanterarna
+    <br />
+    <br />
+    <strong>DatabaseHandler</strong><br />
+    Handlers är de tillgängliga databashanterarna man kan välja mellan. Skulle nprmalt
+    bara innehålla en.<br />
+    Database innehåller skript för Caché databasen. Databasen innehåller Parent och
+    Child object där Child object hör till Parent objekt.<br />
+    Dvs om man hämtar ut ett Parent objekt fattar databasen att den ska hämta Child
+    objekten också och stoppa dem i en lista.<br />
+    <br />
+    <strong>Nya</strong><br />
+    Den nya lösningen implementerar MVP<br />
+    Det finns ingen intressant kod i View<br />
+    All kod ligger i vanliga assemblies och är lätt att unit-testa<br />
+    IoC används (spring.net), tex lätt att mocka bort database eller ersätta den med
+    en annan<br />
+    använder interface<br />
+    använder objektdatabas med samma klasser som domänmodellen<br />
+    har en windows klient för att administrera databasen<br />
+    <br />
+    <strong>Gamla</strong><br />
+    Den gamla lösningen var monolitisk, svårtestad, inga interface<br />
+    model och controller sammanblandad<br />
+    dålig modularisering och återanvändbarhet<br />
+    inga kända patterns<br />
+    använder tråkig relationsdatabas
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankWords", "Parser\RankWords.csproj", "{D35E4EFA-44C4-4A2C-9844-676B5CFBCC85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankWords.Tests", "Parser.Tests\RankWords.Tests.csproj", "{B8CAF554-5969-40A6-B621-A3071904990C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35E4EFA-44C4-4A2C-9844-676B5CFBCC85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35E4EFA-44C4-4A2C-9844-676B5CFBCC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35E4EFA-44C4-4A2C-9844-676B5CFBCC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35E4EFA-44C4-4A2C-9844-676B5CFBCC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CAF554-5969-40A6-B621-A3071904990C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CAF554-5969-40A6-B621-A3071904990C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CAF554-5969-40A6-B621-A3071904990C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CAF554-5969-40A6-B621-A3071904990C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

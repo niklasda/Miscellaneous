@@ -1,0 +1,37 @@
+https://confluence.jayway.com/display/WP7/Dahlex+mobile
+
+x microsoft.phone.shell.systemtray.isvisible = false;
+
+v support landscape
+
+x compositor thread for storyboards
+
+x Launchers and chosers
+
+- application bar 
+
+x messagebox.show
+
+- panorama
+
+v gesture service
+
+x AgUnit
+
+Trial API
+
+x Klockan stannar
+
+x Kollisionsljud
+
+level won ljud
+
+Gå-mot-fingret-mode
+
+x mute alla ljud
+
+kolla vibrato funktionen och längden
+
+kolla swipeområdeskoordinaterna som är hårdkodade, skulle kanske kunna vara bg-bildens område.
+
+Random + Campaign mode

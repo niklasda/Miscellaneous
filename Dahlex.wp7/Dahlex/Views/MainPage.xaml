@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Dahlex.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <Button Content="Play Dahlex" HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="buttonPlay" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="LemonChiffon" Click="buttonPlay_Click" />
+            <Button Content="Settings" HorizontalAlignment="Center" Margin="128,0,221,0" x:Name="buttonSettings" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="LemonChiffon" Click="buttonSettings_Click" FontSize="22" />
+            <Button Content="Scores" HorizontalAlignment="Left" x:Name="buttonScores" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="LemonChiffon" Click="buttonScores_Click" FontSize="22" Width="122" />
+            <Button Content="About" x:Name="buttonAbout" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="LemonChiffon" Click="buttonAbout_Click" OpacityMask="{x:Null}" FontSize="22" HorizontalAlignment="Right" Width="112" />
+            <Button BorderBrush="{x:Null}" Content="How" Foreground="LemonChiffon" Margin="0,0,118,0" x:Name="buttonHow" OpacityMask="{x:Null}" VerticalAlignment="Bottom" FontSize="22" Click="buttonHow_Click" HorizontalAlignment="Right" />
+            <Grid.Background>
+                <ImageBrush ImageSource="/Dahlex;component/Images/background.png" Stretch="UniformToFill" />
+            </Grid.Background>
+        </Grid>
+    </Grid>
+ 
+
+</phone:PhoneApplicationPage>

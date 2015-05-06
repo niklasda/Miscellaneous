@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="DahlMapper" default="build">
+    <property name="basename" value="DahlMapper"/>
+    <property name="debug" value="true"/>
+	
+
+	<tstamp/>
+	
+    
+    <target name="clean">
+        <delete>
+            <fileset>
+                <include name="**/bin/*.*"/>
+            </fileset>
+        </delete>
+    </target>
+    
+	
+    
+    <target name="build" >
+        <exec program="msbuild.exe" />
+    </target>
+
+</project>

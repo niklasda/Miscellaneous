@@ -1,0 +1,20 @@
+<DahlexTheme version="1">
+	<ThemeName>DefaultTheme</ThemeName>
+	<Author>Niklas</Author>
+	<Board level="1">
+		<ImageFolder>Level1</ImageFolder>
+		<ImageHeight>29</ImageHeight>
+		<ImageWidth>29</ImageWidth>
+		<LineWidth>5</LineWidth>
+		<LineColor>Black</LineColor>
+		<BackgroundColor>White</BackgroundColor>
+	</Board>
+	<Board level="*">
+		<ImageFolder>LevelRest</ImageFolder>
+		<ImageHeight>29</ImageHeight>
+		<ImageWidth>29</ImageWidth>
+		<LineWidth>5</LineWidth>
+		<LineColor>Transparent</LineColor>
+		<BackgroundImage>bg.png</BackgroundImage>
+	</Board>
+</DahlexTheme>

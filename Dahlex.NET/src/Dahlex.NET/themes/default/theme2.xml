@@ -1,0 +1,207 @@
+<!-- Tags names are case sensitive -->
+<!-- Color names must be known -->
+<DahlexTheme version="1">
+	<ThemeName>DefaultTheme</ThemeName>
+	<Author>Niklas</Author>
+  <BoardHeight>9</BoardHeight>
+  <BoardWidth>9</BoardWidth>
+  <Board level="1">
+    <ImageFolder>Level1</ImageFolder>
+    <ImageHeight>29</ImageHeight>
+    <ImageWidth>29</ImageWidth>
+    <LineWidth>5</LineWidth>
+    <LineColor>Black</LineColor>
+    <BackgroundColor>White</BackgroundColor>
+    <StaticLevel width="5" height="5">
+      <Row orderNr="1">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Robot" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="2">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Heap" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="3">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Professor" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="4">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Heap" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="5">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Robot" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+    </StaticLevel>
+  </Board>
+  <Board level="3">
+    <ImageFolder>Level1</ImageFolder>
+    <ImageHeight>29</ImageHeight>
+    <ImageWidth>29</ImageWidth>
+    <LineWidth>5</LineWidth>
+    <LineColor>Black</LineColor>
+    <BackgroundColor>White</BackgroundColor>
+  </Board>
+  <Board level="*">
+		<ImageFolder>LevelRest</ImageFolder>
+		<ImageHeight>29</ImageHeight>
+		<ImageWidth>29</ImageWidth>
+		<LineWidth>1</LineWidth>
+		<LineColor>Transparent</LineColor>
+		<BackgroundImage>bg.jpg</BackgroundImage>
+
+    <StaticLevel width="5" height="5">
+      <Row orderNr="1">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Robot" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="2">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Heap" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="3">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Professor" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="4">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Heap" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+      <Row orderNr="5">
+        <Column orderNr="1">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="2">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="3">
+          <Cell type="Robot" />
+        </Column>
+        <Column orderNr="4">
+          <Cell type="None" />
+        </Column>
+        <Column orderNr="5">
+          <Cell type="None" />
+        </Column>
+      </Row>
+    </StaticLevel>
+	</Board>
+</DahlexTheme>

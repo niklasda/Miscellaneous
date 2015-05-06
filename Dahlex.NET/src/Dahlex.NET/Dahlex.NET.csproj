@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA61C357-7761-4CA4-8008-64564DFDF885}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dahlex</RootNamespace>
+    <AssemblyName>Dahlex.NET</AssemblyName>
+    <ManifestCertificateThumbprint>010852EDF4C4C60712CD02C0047F44AF255FB5F4</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Dahlex.NET_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>professor_01.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Dahlex.NET/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://nida.se/dahlex.net/</InstallUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1303;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA1300</CodeAnalysisRules>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fDahlexView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDahlexView.Designer.cs">
+      <DependentUpon>fDahlexView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHelp.Designer.cs">
+      <DependentUpon>fHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHighScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHighScores.Designer.cs">
+      <DependentUpon>fHighScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOptions.Designer.cs">
+      <DependentUpon>fOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fDahlexView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fDahlexView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHighScores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fHighScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="professor_01.ico" />
+    <Content Include="themes\default\bg.jpg" />
+    <Content Include="themes\default\heap_01.png" />
+    <Content Include="themes\default\heap_02.png" />
+    <Content Include="themes\default\heap_03.png" />
+    <Content Include="themes\default\professor_01.png" />
+    <Content Include="themes\default\professor_02.png" />
+    <Content Include="themes\default\robot_01.png" />
+    <Content Include="themes\default\robot_02.png" />
+    <Content Include="themes\default\robot_03.png" />
+    <Content Include="themes\default\theme3.xml" />
+    <Content Include="themes\default\theme.xml" />
+    <Content Include="themes\johan\heap_01.png" />
+    <Content Include="themes\johan\professor_01.png" />
+    <Content Include="themes\johan\robot_01.png" />
+    <Content Include="themes\johan\theme.xml" />
+    <Content Include="themes\tini\heap_01.png" />
+    <Content Include="themes\tini\heap_02.png" />
+    <Content Include="themes\tini\heap_03.png" />
+    <Content Include="themes\tini\heap_04.png" />
+    <Content Include="themes\tini\heap_05.png" />
+    <Content Include="themes\tini\heap_06.png" />
+    <Content Include="themes\tini\heap_07.png" />
+    <Content Include="themes\tini\professor_01.gif" />
+    <Content Include="themes\tini\professor_01.png" />
+    <Content Include="themes\tini\robot_01.png" />
+    <Content Include="themes\tini\robot_02.png" />
+    <Content Include="themes\tini\robot_03.png" />
+    <Content Include="themes\tini\robot_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DahlexLogic\DahlexLogic.csproj">
+      <Project>{2314602E-7AA2-4F4C-B780-2DD492089368}</Project>
+      <Name>DahlexLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DahlexThemeEditor\DahlexThemeEditor.csproj">
+      <Project>{F6FFD839-3546-4A10-8434-E5CF65D7C64E}</Project>
+      <Name>DahlexThemeEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

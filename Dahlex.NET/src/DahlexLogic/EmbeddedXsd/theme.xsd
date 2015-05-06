@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DahlexTheme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ThemeName" type="xs:string" />
+        <xs:element name="Author" type="xs:string" />
+        <xs:element name="BoardHeight" type="xs:unsignedByte" />
+        <xs:element name="BoardWidth" type="xs:unsignedByte" />
+        <xs:element maxOccurs="unbounded" name="Board">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ImageFolder" type="xs:string" />
+              <xs:element name="ImageHeight" type="xs:unsignedByte" />
+              <xs:element name="ImageWidth" type="xs:unsignedByte" />
+              <xs:element name="LineWidth" type="xs:unsignedByte" />
+              <xs:element name="LineColor" type="xs:string" />
+              <xs:element minOccurs="0" name="BackgroundImage" type="xs:string" />
+              <xs:element minOccurs="0" name="BackgroundColor" type="xs:string" />
+              <xs:element minOccurs="0" name="StaticLevel">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Row">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Column">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Cell">
+                                  <xs:complexType>
+                                    <xs:attribute name="type" type="xs:string" use="optional" />
+                                    <xs:attribute name="imageIndex" type="xs:unsignedByte" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="orderNr" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="orderNr" type="xs:unsignedByte" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="width" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="height" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="level" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

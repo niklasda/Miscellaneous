@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FourInRow</name>
+    </assembly>
+    <members>
+        <member name="T:FourInRow.Beeper">
+            <summary>
+            Summary description for Beeper.
+            </summary>
+        </member>
+        <member name="M:FourInRow.Beeper.doBeep">
+            <summary>
+            Sound a beep
+            </summary>
+        </member>
+        <member name="T:FourInRow.Board">
+            <summary>
+            Summary description for Board.
+            </summary>
+        </member>
+        <member name="M:FourInRow.Board.#ctor(FourInRow.FormFourInRowTable)">
+            <summary>
+            constructor used when creating new Board
+            </summary>
+        </member>
+        <member name="M:FourInRow.Board.getBoard">
+            <summary>
+            The Board positions matrix
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Board.getFreePosition(System.Int32)">
+            <summary>
+            get the free position in this column
+            if no position is free c_iBoardWidth is returned
+            </summary>
+            <param name="iColumn">column to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Board.isColumnFree(System.Int32)">
+            <summary>
+            check if a position is available in the specified column
+            </summary>
+            <param name="iColumn">column to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Board.placeInColumn(FourInRow.Player,System.Int32)">
+            <summary>
+            place value in specified column
+            </summary>
+            <param name="oPlayer">player to put</param>
+            <param name="iColumn">column to place in</param>
+        </member>
+        <member name="M:FourInRow.Board.boardIsFull">
+            <summary>
+            check if the board is full
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Board.addControls(System.Windows.Forms.Panel)">
+            <summary>
+            add textboxed to the gui container
+            </summary>
+            <param name="gbBoard"></param>
+        </member>
+        <member name="M:FourInRow.Board.enableAllDropButtons">
+            <summary>
+            enable all drop buttons
+            </summary>
+        </member>
+        <member name="M:FourInRow.Board.disableAllDropButtons">
+            <summary>
+            disable all drop buttons
+            </summary>
+        </member>
+        <member name="M:FourInRow.Board.playerHasWon(FourInRow.Player,System.Int32)">
+            <summary>
+            check if specified player has won
+            </summary>
+            <param name="oPlayer"></param>
+            <param name="iColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FourInRow.BoardPosition">
+            <summary>
+            Class describing aposition on the board
+            </summary>
+        </member>
+        <member name="M:FourInRow.BoardPosition.#ctor(FourInRow.FormFourInRowTable,System.Int32,System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image)">
+            <summary>
+            constructor for a position on the board
+            </summary>
+            <param name="oGameForm">the board form</param>
+            <param name="x">x coordinate</param>
+            <param name="y">y coordinate</param>
+            <param name="imPlayer1">image for player 1</param>
+            <param name="imPlayer2">image for player 2</param>
+            <param name="imEmpty">image for empty position</param>
+        </member>
+        <member name="M:FourInRow.BoardPosition.resetValue">
+            <summary>
+            empty this position
+            </summary>
+        </member>
+        <member name="M:FourInRow.BoardPosition.isPositionFree">
+            <summary>
+            is this position free
+            </summary>
+        </member>
+        <member name="M:FourInRow.BoardPosition.isPositionNotFree">
+            <summary>
+            is this position occupied
+            </summary>
+        </member>
+        <member name="M:FourInRow.BoardPosition.setValue(FourInRow.Player)">
+            <summary>
+            set the value of a player on this board position 
+            </summary>
+            <param name="oPlayer">player who's value to set</param>
+        </member>
+        <member name="M:FourInRow.BoardPosition.setValueAndImage(FourInRow.Player)">
+            <summary>
+            set the value of a player on this board position and render
+            player's image
+            </summary>
+            <param name="oPlayer">player who's value to set</param>
+        </member>
+        <member name="M:FourInRow.BoardPosition.getValue">
+            <summary>
+            returns the value for this position
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.BoardPosition.addControl(System.Windows.Forms.Panel)">
+            <summary>
+            add a board position control (PictureBox) to container (Panel)
+            </summary>
+            <param name="gbBoard">the containing control</param>
+        </member>
+        <member name="T:FourInRow.BoardPositionValue">
+            <summary>
+            Summary description for BoardPositionValue.
+            </summary>
+        </member>
+        <member name="M:FourInRow.BoardPositionValue.#ctor(FourInRow.Board,System.Int32,System.Int32,FourInRow.Player)">
+            <summary>
+            constructor used when creating new BoardPositionValue
+            </summary>
+        </member>
+        <member name="M:FourInRow.BoardPositionValue.ToString">
+            <summary>
+            return intermediate values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FourInRow.BoardPositionValue.iValue">
+            <summary>
+            The value for this position for the specified player
+            </summary>
+        </member>
+        <member name="P:FourInRow.BoardPositionValue.iColumn">
+            <summary>
+            The column this value is for
+            </summary>
+        </member>
+        <member name="T:FourInRow.Encrypter">
+            <summary>
+            Handles Ecryption and decryption of textstrings
+            </summary>
+        </member>
+        <member name="F:FourInRow.Encrypter.sCryptoName">
+            <summary>
+            The name of the crypto algorithm, displayed in the status bar
+            </summary>
+        </member>
+        <member name="M:FourInRow.Encrypter.Encrypt(System.String)">
+            <summary>
+            Encrypt a string using 3DES and Base-64
+            </summary>
+            <param name="sOriginal">Plain text to be encrypted</param>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Encrypter.Decrypt(System.String)">
+            <summary>
+            Decrypt and decode an 3DES encrypted and Base-64 encoded string 
+            </summary>
+            <param name="sEncrypted">3DES encoded text that has been Base-64 encoded</param>
+            <returns>Plain text</returns>
+        </member>
+        <member name="T:FourInRow.FormAbout">
+            <summary>
+            Summary description for formAbout.
+            </summary>
+        </member>
+        <member name="F:FourInRow.FormAbout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormAbout.#ctor">
+            <summary>
+            standard empty constructor
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:FourInRow.FormFourInRowTable">
+            <summary>
+            Summary description for FormFourInRowTable.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.#ctor">
+            <summary>
+            standard empty constructor
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.getEmptyImage">
+            <summary>
+            returns the image for an empty position on the board
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.getPlayer1Image">
+            <summary>
+            returns the image for player 1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.getPlayer2Image">
+            <summary>
+            returns the image for player 2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.doDropIfDrag(System.Int32)">
+            <summary>
+            place a value in specified column
+            if we are dragging
+            </summary>
+            <param name="iColumn">column to drop in</param>
+        </member>
+        <member name="M:FourInRow.FormFourInRowTable.doDrop(System.Int32)">
+            <summary>
+            place a value in specified column
+            </summary>
+            <param name="iColumn">column to drop in</param>
+            <returns>true if it was legal to drop in specified column</returns>
+        </member>
+        <member name="T:FourInRow.FormHighScores">
+            <summary>
+            Summary description for formAbout.
+            </summary>
+        </member>
+        <member name="F:FourInRow.FormHighScores.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormHighScores.#ctor">
+            <summary>
+            standard empty constructor
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormHighScores.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormHighScores.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FourInRow.FormHighScores.showHighScores(FourInRow.HighScoresDictionary)">
+            <summary>
+            show list of high scores
+            </summary>
+            <param name="dicHighScores"></param>
+        </member>
+        <member name="T:FourInRow.Game">
+            <summary>
+            Summary description for Game.
+            </summary>
+        </member>
+        <member name="M:FourInRow.Game.#ctor(FourInRow.FormFourInRowTable,System.String,System.String)">
+            <summary>
+            constructor used when creating new Game
+            </summary>
+        </member>
+        <member name="M:FourInRow.Game.getGameDuration">
+            <summary>
+            the duration of the game
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.isDrawLegal(System.Int32)">
+            <summary>
+            check if its possible to place value in specified column
+            </summary>
+            <param name="iColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.makeDraw(System.Int32)">
+            <summary>
+            place value in specified column
+            </summary>
+            <param name="iColumn"></param>
+        </member>
+        <member name="M:FourInRow.Game.boardIsFull">
+            <summary>
+            check if board is full
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.playerHasWon(System.Int32)">
+            <summary>
+            check if current player has won
+            </summary>
+            <param name="iColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.changePlayer">
+            <summary>
+            pass turn to next player
+            </summary>
+        </member>
+        <member name="M:FourInRow.Game.getCurrentPlayer">
+            <summary>
+            return current player
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.getNonCurrentPlayer">
+            <summary>
+            return non-current player
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.getPlayer1">
+            <summary>
+            return Player 1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.getPlayer2">
+            <summary>
+            return Player 2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Game.addControls(System.Windows.Forms.Panel)">
+            <summary>
+            add textboxes to gui container
+            </summary>
+            <param name="gbBoard"></param>
+        </member>
+        <member name="M:FourInRow.Game.enableAllDropButtons">
+            <summary>
+            enable all drop buttons
+            </summary>
+        </member>
+        <member name="M:FourInRow.Game.disableAllDropButtons">
+            <summary>
+            disable all drop buttons
+            </summary>
+        </member>
+        <member name="M:FourInRow.Game.getBestMove(FourInRow.Player)">
+            <summary>
+            return the best column to drop in
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FourInRow.Game.bGameOver">
+            <summary>
+            flag indicating if game is or should be stopped
+            </summary>
+        </member>
+        <member name="P:FourInRow.Game.dtStart">
+            <summary>
+            when this game started
+            </summary>
+        </member>
+        <member name="P:FourInRow.Game.dtEnd">
+            <summary>
+            when this game ended
+            </summary>
+        </member>
+        <member name="T:FourInRow.HighScore">
+            <summary>
+            Summary description for HighScore.
+            </summary>
+        </member>
+        <member name="M:FourInRow.HighScore.#ctor(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            constructor
+            </summary>
+            <param name="sName"></param>
+            <param name="sGameTime"></param>
+            <param name="sBoard"></param>
+            <param name="iMoves"></param>
+        </member>
+        <member name="M:FourInRow.HighScore.CompareTo(System.Object)">
+            <summary>
+             IComparable Members
+            </summary>
+            <param name="obj">another HighScore object to compare to</param>
+            <returns></returns>
+        </member>
+        <member name="P:FourInRow.HighScore.sName">
+            <summary>
+            name of player holding this score
+            </summary>
+        </member>
+        <member name="P:FourInRow.HighScore.sBoard">
+            <summary>
+            the board resulting in this score
+            </summary>
+        </member>
+        <member name="P:FourInRow.HighScore.sGameTime">
+            <summary>
+            result time for this players score
+            </summary>
+        </member>
+        <member name="P:FourInRow.HighScore.iMoves">
+            <summary>
+            number of moves for this players score
+            </summary>
+        </member>
+        <member name="T:FourInRow.HighScoresDictionary">
+            <summary>
+            Dictionary for Note objects.
+            i.e. all the loaded Notes
+            </summary>
+        </member>
+        <member name="M:FourInRow.HighScoresDictionary.Add(FourInRow.HighScore)">
+            <summary>
+             Type-safe version of IDictionary.Add
+            </summary>
+            <param name="oHighScore">the Note</param>
+        </member>
+        <member name="P:FourInRow.HighScoresDictionary.Item(System.Int32)">
+            <summary>
+            Type-safe version of IDictionary.Item
+            </summary>
+        </member>
+        <member name="T:FourInRow.Player">
+            <summary>
+            Summary description for Player.
+            </summary>
+        </member>
+        <member name="M:FourInRow.Player.#ctor(System.Int32,System.String,System.Drawing.Color)">
+            <summary>
+            constructor used when creating new Player
+            </summary>
+        </member>
+        <member name="M:FourInRow.Player.getPlayerName">
+            <summary>
+            return the name of the player
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Player.getPlayerMoves">
+            <summary>
+            return the number of moves the player has made
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Player.incrementPlayerMoves">
+            <summary>
+            increment the number of moves the player has made
+            </summary>
+        </member>
+        <member name="M:FourInRow.Player.resetPlayerMoves">
+            <summary>
+            set number of moves to zero
+            </summary>
+        </member>
+        <member name="M:FourInRow.Player.setPlayerName(System.String)">
+            <summary>
+            set a new name for the player
+            </summary>
+            <param name="sNewName">the new name</param>
+        </member>
+        <member name="M:FourInRow.Player.getPlayerValue">
+            <summary>
+            return the value used on the board by the player
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FourInRow.Player.getPlayerColor">
+            <summary>
+            return the color used by the player
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FourInRow.Settings">
+            <summary>
+            Class used.
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.sApplicationName">
+            <summary>
+            name of the application including version number. Used in titlebars.
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.sSettingsFileName">
+            <summary>
+            Name of file to save notes to. 
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.c_iNbrOfPlayers">
+            <summary>
+            number of players for this game (do absolutely not change)
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.c_iBoardWidth">
+            <summary>
+            width of the board for this game (do rather not change)
+            allowed values are 7 and 8
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.c_iBoardHeight">
+            <summary>
+            height of the board for this game (do rather not change)
+            allowed values are 6 and 7
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.c_iFreePositionValue">
+            <summary>
+            value in free positions on the board
+            do not change to any value user by the players (1 or 2)
+            </summary>
+        </member>
+        <member name="F:FourInRow.Settings.c_iWinLength">
+            <summary>
+            number of values in a row to win
+            </summary>
+        </member>
+        <member name="M:FourInRow.Settings.isFileWritable(System.String)">
+            <summary>
+            Check if a file exists and is writable
+            </summary>
+            <param name="sFilename">Name of file to check</param>
+            <returns>True if file exists and is writable</returns>
+        </member>
+        <member name="M:FourInRow.Settings.saveHighScores(FourInRow.HighScoresDictionary,System.String,System.String)">
+            <summary>
+            write the password dictionary to file
+            </summary>
+            <param name="dicPasswords">Dictionary of Passwords to save</param>
+            <param name="sPlayer1Name">name of player 1</param>
+            <param name="sPlayer2Name">name of player 2</param>
+        </member>
+        <member name="M:FourInRow.Settings.loadHighScores(System.String@,System.String@)">
+            <summary>
+            Read high scores from file
+            </summary>
+            <param name="sPlayer1Name">out name of player 1</param>
+            <param name="sPlayer2Name">out name of player 2</param>
+            <returns>Dictionary containing high scores</returns>
+        </member>
+    </members>
+</doc>

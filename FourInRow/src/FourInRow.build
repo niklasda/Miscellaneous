@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="FourInRow" default="build">
+    <property name="basename" value="FourInRow"/>
+    
+	<property name="test.dir" value="FourInRowTests\bin\Debug"/>
+	
+	
+
+	<tstamp/>
+	
+    
+    <target name="clean">
+        <delete>
+            <fileset>
+                <include name="**/bin/*.*"/>
+            </fileset>
+        </delete>
+    </target>
+    
+	<target name="test" depends="build" description="Runs NUnt tests for all built assemblies">
+		<nunit2>
+			<formatter type="Xml" usefile="false"/>
+			<test assemblyname="${test.dir}/FourInRowTests.dll" />
+		</nunit2>
+	</target>
+    
+    <target name="build">
+        <exec program="msbuild.exe" />
+    </target>
+
+</project>

@@ -1,23 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLister", "InteropTlb\ComLister.csproj", "{178D87D2-98C0-4469-82E0-C0F8EBB5D123}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComFinder", "ComFindr\ComFinder.csproj", "{C5332F79-04C9-4B66-A342-0394C72F0A36}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://sysmstfaps1-s1.sys.dom:8443/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ComFindr\\ComFinder.csproj
-		SccProjectName1 = ComFindr
-		SccLocalPath1 = ComFindr
-		SccProjectUniqueName2 = InteropTlb\\ComLister.csproj
-		SccProjectName2 = InteropTlb
-		SccLocalPath2 = InteropTlb
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

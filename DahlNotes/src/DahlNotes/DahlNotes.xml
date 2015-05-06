@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TrayNotes</name>
+    </assembly>
+    <members>
+        <member name="M:TrayNotes.App.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Configuration.NoteState">
+            <summary>
+            The different states a note can be in
+            </summary>
+        </member>
+        <member name="F:TrayNotes.Configuration.NoteState.Nothing">
+            <summary>
+            Do not show ant text in status bar
+            </summary>
+        </member>
+        <member name="F:TrayNotes.Configuration.NoteState.CurrentTime">
+            <summary>
+            show clock in status bar
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Forms.FormAbout">
+            <summary>
+            About-box
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormAbout.#ctor">
+            <summary>
+            Construct the about-box
+            </summary>
+        </member>
+        <member name="F:TrayNotes.Forms.FormAbout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TrayNotes.Forms.FormAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Forms.FormNote">
+            <summary>
+            The form showing a Note.
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNote.#ctor(TrayNotes.Forms.FormTrayNotesOptions,TrayNotes.Notes.Note)">
+            <summary>
+            Contruct the note-form
+            </summary>
+            <param name="mainForm">main application form</param>
+            <param name="noteToShow">the note to show</param>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNote.UpdateNote(TrayNotes.Notes.Note)">
+            <summary>
+            show updated note in this form
+            </summary>
+            <param name="newNote">updated note to show</param>
+        </member>
+        <member name="F:TrayNotes.Forms.FormNote.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNote.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNote.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Forms.FormNote.TheNote">
+            <summary>
+            The note currently shown in this form
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Forms.FormNoteProperties">
+            <summary>
+            Form for editing notes
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.#ctor">
+            <summary>
+            construct the form
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.GetNote">
+            <summary>
+            returns the configured note
+            </summary>
+            <returns>a note</returns>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.SetNote(TrayNotes.Notes.Note)">
+            <summary>
+            sets the note to configure
+            </summary>
+            <param name="oldNote">the note</param>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.AddNew">
+            <summary>
+            starts dialog for adding new notes
+            </summary>
+            <returns>ok or cancel</returns>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.EditExisting">
+            <summary>
+            starts dialog for editing existing note
+            </summary>
+            <returns>ok or cancel</returns>
+        </member>
+        <member name="F:TrayNotes.Forms.FormNoteProperties.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TrayNotes.Forms.FormNoteProperties.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Forms.FormTrayNotesOptions">
+            <summary>
+            Main form of the Application
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormTrayNotesOptions.#ctor">
+            <summary>
+            construct the main form
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormTrayNotesOptions.ShowWindow(System.Boolean,System.Boolean)">
+            <summary>
+            restores window and shows in TaskBar, and add note if specified
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormTrayNotesOptions.UpdateNote(TrayNotes.Notes.Note,System.Boolean)">
+            <summary>
+            Applies changes made to a Note in a NoteProperties form
+            </summary>
+            <param name="updatedNote">updated Note object</param>
+            <param name="isClosing">is update caused by closing</param>
+        </member>
+        <member name="F:TrayNotes.Forms.FormTrayNotesOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Forms.FormTrayNotesOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TrayNotes.Forms.FormTrayNotesOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Notes.Note">
+            <summary>
+            Summary description for Note.
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Notes.Note.#ctor(System.Int32,System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font,System.Int32,System.Boolean)">
+            <summary>
+            constructor used when creating new Note
+            </summary>
+            <param name="id">note id</param>
+            <param name="noteText">the text</param>
+            <param name="backColor">window background color</param>
+            <param name="textColor">text color</param>
+            <param name="textFont">text font</param>
+            <param name="opacity">window opacity</param>
+            <param name="alwaysOnTop">Window always on top</param>
+        </member>
+        <member name="M:TrayNotes.Notes.Note.#ctor(System.Int32,System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font,System.Int32,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            constructor used when loading notes
+            </summary>
+            <param name="id">note id</param>
+            <param name="noteText">the text</param>
+            <param name="backColor">window background color</param>
+            <param name="textColor">text color</param>
+            <param name="textFont">text font</param>
+            <param name="opacity">window opacity</param>
+            <param name="alwaysOnTop">Window always on top</param>
+            <param name="x">window x position</param>
+            <param name="y">window y position</param>
+            <param name="w">window width</param>
+            <param name="h">window height</param>
+            <param name="startOpened">Note opens when application starts</param>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.Id">
+            <summary>
+            the id of the note
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.NoteText">
+            <summary>
+            the note text
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.BackColor">
+            <summary>
+            the backgroud color for the window
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.TextColor">
+            <summary>
+            the text color for the window
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.TextFont">
+            <summary>
+            the text font for the window
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.Opacity">
+            <summary>
+            the opacity for the window
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.Location">
+            <summary>
+            the location for the window
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.Size">
+            <summary>
+            the size for the window
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.StartOpened">
+            <summary>
+            should window open when program starts
+            </summary>
+        </member>
+        <member name="P:TrayNotes.Notes.Note.AlwaysOnTop">
+            <summary>
+            should window be on top
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Notes.IdNotesDictionary">
+            <summary>
+            Dictionary for Note objects.
+            i.e. all the loaded Notes
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Notes.IdNotesDictionary.Add(TrayNotes.Notes.Note)">
+            <summary>
+             Type-safe version of IDictionary.Add
+            </summary>
+            <param name="note">the Note</param>
+        </member>
+        <member name="T:TrayNotes.Notes.IdFormDictionary">
+            <summary>
+            Dictionary for formNote objects.
+            i.e. all the opened Note forms
+            </summary>
+        </member>
+        <member name="T:TrayNotes.Configuration.Settings">
+            <summary>
+            Class used to load and save settings to an XML file.
+            </summary>
+        </member>
+        <member name="F:TrayNotes.Configuration.Settings.ApplicationName">
+            <summary>
+            name of the application including version number. Used in titlebars.
+            </summary>
+        </member>
+        <member name="F:TrayNotes.Configuration.Settings.SettingsFileName">
+            <summary>
+            Name of file to save notes to. 
+            </summary>
+        </member>
+        <member name="M:TrayNotes.Configuration.Settings.WriteNotes(TrayNotes.Notes.IdNotesDictionary)">
+            <summary>
+            Write a dictionary of notes to file
+            </summary>
+            <param name="dicNotes"></param>
+        </member>
+        <member name="M:TrayNotes.Configuration.Settings.ReadNotes">
+            <summary>
+            Read notes from file to dictionary
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrayNotes.Configuration.Settings.IsSettingsFileAvailableAndWritable">
+            <summary>
+            Check if Settings file exists and is writable, so settings can be saves.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

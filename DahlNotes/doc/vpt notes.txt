@@ -1,0 +1,14 @@
+installation: 
+Trevlig wizard, inte en massa onödiga "sidor". Tunn readme, men det blir väl bättre med tiden.
+Gärna möjlighet att starta på samma sida som man väljer att läsa readme-filen, dvs sista sidan.
+
+programmet:
+Måste man ha titelrad på fönsterna? Ser lite klumpigt ut faktiskt.
+Är fönstret stort nog bör man inte ha en disablead scroll-list. Tar onödig plats.
+Möjlighet att ställa options direkt i fönstret, utan att poppa upp gränssnitt med slider etc. Var ställer man StarOpen-flaggan?
+Sätta alarm på notes? Så att de poppar upp med eventuellt ljud också?
+Notes hoppar inte upp överst om man väljer show, om det redan är öppet. Meckigt att hitta öppna noter utan att stänga dem först.
+
+buggar:
+Colorpickern är ställd på svart när man öppnar den, oavsett vilken färg som var vald sedan tidigare. Borde ta med sig tidigare vald färg in i dialogen.
+Är notisen öppen uppdateras den inte med nytt färgval, utan man måste stänga den för att det ska funka. 

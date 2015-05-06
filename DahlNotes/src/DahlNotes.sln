@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DahlNotes", "DahlNotes\DahlNotes.csproj", "{39365FB1-7946-4460-82A5-C9D22D87FE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DahlNotes.Tests", "DahlNotes.Tests\DahlNotes.Tests.csproj", "{DE29E8E1-4349-4D4D-A70F-C03F3D58E004}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39365FB1-7946-4460-82A5-C9D22D87FE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39365FB1-7946-4460-82A5-C9D22D87FE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39365FB1-7946-4460-82A5-C9D22D87FE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39365FB1-7946-4460-82A5-C9D22D87FE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE29E8E1-4349-4D4D-A70F-C03F3D58E004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE29E8E1-4349-4D4D-A70F-C03F3D58E004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE29E8E1-4349-4D4D-A70F-C03F3D58E004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE29E8E1-4349-4D4D-A70F-C03F3D58E004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {51B61B7B-99D9-4CF7-AFE8-F4F3F6461F14}
+	EndGlobalSection
+EndGlobal

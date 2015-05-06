@@ -1,0 +1,35 @@
+
+todo and missing features
+-------------------------
+
+X cannot sort by clicking column headers
+  cannot type 8.3 filenames into addressbar (combobox) 
+X bookmarks are not saved
+  a number of columns are not available, notably attributes
+z does not support command line arguments like explorer.exe (but has /E /EL /ER)
+  no help describing bookmarks and tools and plugins
+
+  Does not support shellextension icon mods (like tortoiseSVN)
+
+X copy shortcut key
+- allway sync
+X renamer
+X beyond compare
+- windiff
+
+X skapa tools and bookmarks folders if missing
+
+  start filezilla with selected folder.
+X start notepad2 with selected file.
+  etc with other tools (renamer etc)
+
+  cannot set unc paths  into addressbar (combobox) 
+
+X Copy Left and right does not overwrite 
+  
+  open DOS prompt only work for folders on the drive that cmd thinks is current
+  support other "DOS" like power shell
+  Configure start up folder - dual bookmark
+  typing \ result in oddity
+  horizontal scroller in filelist
+  

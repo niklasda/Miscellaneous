@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiaryMaster</name>
+    </assembly>
+    <members>
+        <member name="T:DiaryMaster.Diary">
+            <summary>
+            A Diary containing several days and notes
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.Diary.#ctor(System.String)">
+            <summary>
+            constructor for a diary
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.Diary.Save">
+            <summary>
+            Saves the diary to file
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.Diary.DayCount">
+            <summary>
+            Number of DiaryDays in the dictionary
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.Diary.dicDiaryDays">
+            <summary>
+            The dictionary containing the Days in the Diary 
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.Diary.sDatelessNote">
+            <summary>
+            The entry not connected to a date
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.Diary.bIsModified">
+            <summary>
+            Flag indicating if the Diary is modified
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.DiaryDay">
+            <summary>
+            A Day containing several entries for that day
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.DiaryDay.#ctor(System.DateTime)">
+            <summary>
+            constructor for a day
+            </summary>
+            <param name="p_dtEntryDate">The date</param>
+        </member>
+        <member name="M:DiaryMaster.DiaryDay.AddEntry(DiaryMaster.DiaryEntry)">
+            <summary>
+            Add an entry to this date
+            </summary>
+            <param name="oEntry">Entry to add</param>
+        </member>
+        <member name="P:DiaryMaster.DiaryDay.dtEntryDate">
+            <summary>
+            The date
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.DiaryDay.dicEntries">
+            <summary>
+            The entries for ths date
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.DiaryDayDictionary">
+            <summary>
+            Dictionary to store diary day objects in
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.DiaryDayDictionary.Add(DiaryMaster.DiaryDay)">
+            <summary>
+            Add a DiaryDay to this dictionary
+            </summary>
+            <param name="oDiaryDay"></param>
+        </member>
+        <member name="M:DiaryMaster.DiaryDayDictionary.Remove(DiaryMaster.DiaryDay)">
+            <summary>
+            Remove a DiaryDay to this dictionary
+            </summary>
+            <param name="oDiaryDay"></param>
+        </member>
+        <member name="M:DiaryMaster.DiaryDayDictionary.Contains(System.DateTime)">
+            <summary>
+            Check if this dictionary contain a specific date
+            </summary>
+            <param name="dtEntryDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiaryMaster.DiaryDayDictionary.getKeys">
+            <summary>
+            Returns the Keys collection from the InnerHashTable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DiaryMaster.DiaryDayDictionary.Item(System.DateTime)">
+            <summary>
+            return a DiaryDay for this date
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.DiaryEntry">
+            <summary>
+            An entry for a day
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.DiaryEntry.#ctor(System.Int32,System.String,DiaryMaster.Recurrance)">
+            <summary>
+            Contructor for an entry
+            </summary>
+            <param name="p_iEntryId"></param>
+            <param name="p_sEntry"></param>
+            <param name="p_eRecurring"></param>
+        </member>
+        <member name="M:DiaryMaster.DiaryEntry.ToString">
+            <summary>
+            returns the first line of this entry text
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DiaryMaster.DiaryEntry.iEntryId">
+            <summary>
+            the id of this entry
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.DiaryEntry.eRecurring">
+            <summary>
+            the recurrance for this entry
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.DiaryEntry.sEntry">
+            <summary>
+            the text for this entry
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.DiaryEntryDictionary">
+            <summary>
+            Dictionary to store DiaryEntry objects in
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.DiaryEntryDictionary.Add(DiaryMaster.DiaryEntry)">
+            <summary>
+            add entry to this dictionary
+            </summary>
+            <param name="oEntry"></param>
+        </member>
+        <member name="M:DiaryMaster.DiaryEntryDictionary.Remove(DiaryMaster.DiaryEntry)">
+            <summary>
+            remove entry from this dictionary
+            </summary>
+            <param name="oEntry"></param>
+        </member>
+        <member name="M:DiaryMaster.DiaryEntryDictionary.Contains(DiaryMaster.DiaryEntry)">
+            <summary>
+            check if this dictionary contains specified entry
+            </summary>
+            <param name="oEntry"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DiaryMaster.DiaryEntryDictionary.Item(System.Int32)">
+            <summary>
+            get entry with specified id
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.Encrypter">
+            <summary>
+            Handles Ecryption and decryption of textstrings
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Encrypter.sCryptoName">
+            <summary>
+            The name of the crypto algorithm, displayed in the status bar
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.Encrypter.Encrypt(System.String)">
+            <summary>
+            Encrypt a string using 3DES and Base-64
+            </summary>
+            <param name="sOriginal">Plain text to be encrypted</param>
+            <returns></returns>
+        </member>
+        <member name="M:DiaryMaster.Encrypter.Decrypt(System.String)">
+            <summary>
+            Decrypt and decode an 3DES encrypted and Base-64 encoded string 
+            </summary>
+            <param name="sEncrypted">3DES encoded text that has been Base-64 encoded</param>
+            <returns>Plain text</returns>
+        </member>
+        <member name="T:DiaryMaster.FormAbout">
+            <summary>
+            Summary description for frmAbout.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormAbout.#ctor">
+            <summary>
+            standard empty constructor
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.Recurrance">
+            <summary>
+            Specified recurrance for an entry
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.None">
+            <summary>
+            Never
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.Daily">
+            <summary>
+            Once every day
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.Weekly">
+            <summary>
+            Once every week
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.Monthly">
+            <summary>
+            Once every month
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.Quarterly">
+            <summary>
+            Once every three months
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.Tertiarly">
+            <summary>
+            Once every four months
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Recurrance.Yearly">
+            <summary>
+            Once a year
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.FormDiaryMaster">
+            <summary>
+            Summary description for PasswordManager.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMaster.#ctor(System.String)">
+            <summary>
+            standard empty constructor
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMaster.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMaster.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMaster.saveDiary">
+            <summary>
+            Save the diary open in this form
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.FormDiaryMasterTop">
+            <summary>
+            Summary description for PasswordManager.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMasterTop.#ctor">
+            <summary>
+            standard empty constructor
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMasterTop.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMasterTop.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.FormDiaryMasterTop.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.ListViewTextSort">
+            <summary>
+            Provides text sorting (case sensitive)
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewTextSort.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sortColumn">Column to be sorted</param>
+            <param name="ascending">true, if ascending order, false otherwise</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewTextSort.Compare(System.Object,System.Object)">
+            <summary>
+            Implementation of IComparer.Compare
+            </summary>
+            <param name="lhs">First Object to compare</param>
+            <param name="rhs">Second Object to compare</param>
+            <returns>Less that zero if lhs is less than rhs. Greater than zero if lhs greater that rhs. Zero if they are equal</returns>
+        </member>
+        <member name="M:DiaryMaster.ListViewTextSort.OnCompare(System.String,System.String)">
+            <summary>
+            Overridden to do type-specific comparision.
+            </summary>
+            <param name="lhs">First Object to compare</param>
+            <param name="rhs">Second Object to compare</param>
+            <returns>Less that zero if lhs is less than rhs. Greater than zero if lhs greater that rhs. Zero if they are equal</returns>
+        </member>
+        <member name="T:DiaryMaster.ListViewTextCaseInsensitiveSort">
+            <summary>
+            Provides text sorting (case insensitive)
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewTextCaseInsensitiveSort.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sortColumn">Column to be sorted</param>
+            <param name="ascending">true, if ascending order, false otherwise</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewTextCaseInsensitiveSort.OnCompare(System.String,System.String)">
+            <summary>
+            Case-insensitive compare
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.ListViewDateSort">
+            <summary>
+            Provides date sorting
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewDateSort.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sortColumn">Column to be sorted</param>
+            <param name="ascending">true, if ascending order, false otherwise</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewDateSort.OnCompare(System.String,System.String)">
+            <summary>
+            Date compare
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.ListViewInt32Sort">
+            <summary>
+            Provides integer (32 bits) sorting
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewInt32Sort.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sortColumn">Column to be sorted</param>
+            <param name="ascending">true, if ascending order, false otherwise</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewInt32Sort.OnCompare(System.String,System.String)">
+            <summary>
+            Integer compare
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.ListViewInt64Sort">
+            <summary>
+            Provides integer (64 bits) sorting
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewInt64Sort.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sortColumn">Column to be sorted</param>
+            <param name="ascending">true, if ascending order, false otherwise</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewInt64Sort.OnCompare(System.String,System.String)">
+            <summary>
+            Integer compare
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.ListViewDoubleSort">
+            <summary>
+            Provides floating-point sorting
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewDoubleSort.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sortColumn">Column to be sorted</param>
+            <param name="ascending">true, if ascending order, false otherwise</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewDoubleSort.OnCompare(System.String,System.String)">
+            <summary>
+            Floating-point compare
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.ListViewSortManager">
+            <summary>
+            Provides sorting of ListView columns 
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.#ctor(System.Windows.Forms.ListView,System.Type[])">
+            <summary>
+            
+            </summary>
+            <param name="list">ListView that this manager will provide sorting to</param>
+            <param name="comparers">Array of Types of comparers (One for each column)</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.GetColumnComparerType(System.Int32)">
+            <summary>
+            Returns the type of the comparer for the given column
+            </summary>
+            <param name="column">Column index</param>
+            <returns></returns>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.SetColumnComparerType(System.Int32,System.Type)">
+            <summary>
+            Sets the type of the comparer for the given column
+            </summary>
+            <param name="column">Column index</param>
+            <param name="comparerType">Comparer type</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.SetComparerTypes(System.Type[])">
+            <summary>
+            Reassigns the comparer types for all the columns
+            </summary>
+            <param name="comparers">Array of Types of comparers (One for each column)</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.Sort(System.Int32)">
+            <summary>
+            Sorts the rows based on the given column and the current sort order
+            </summary>
+            <param name="column">Column to be sorted</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.Sort(System.Int32,System.Windows.Forms.SortOrder)">
+            <summary>
+            Sorts the rows based on the given column and sort order
+            </summary>
+            <param name="column">Column to be sorted</param>
+            <param name="order">Sort order</param>
+        </member>
+        <member name="M:DiaryMaster.ListViewSortManager.ColumnClick(System.Object,System.Windows.Forms.ColumnClickEventArgs)">
+            <summary>
+            ColumnClick event handler
+            </summary>
+            <param name="sender">Event sender</param>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="P:DiaryMaster.ListViewSortManager.Column">
+            <summary>
+            Returns the current sort column
+            </summary>
+        </member>
+        <member name="P:DiaryMaster.ListViewSortManager.SortOrder">
+            <summary>
+            Returns the current sort order
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.MruMenuItem">
+            <summary>
+            Summary description for MRUMenuItem.
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.MruMenuItem.#ctor(System.String)">
+            <summary>
+            Create a new MRU MenuItem with specified name
+            </summary>
+            <param name="sMenuItemName">Name of MenuItem</param>
+        </member>
+        <member name="M:DiaryMaster.MruMenuItem.#ctor">
+            <summary>
+            Create a new MRU MenuItem.
+            Also use by menu merge
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.MruMenuItem.Initialize(System.String[])">
+            <summary>
+            Initialize the MRU submenu with the specified filenames
+            </summary>
+            <param name="files">Files to add to list</param>
+        </member>
+        <member name="M:DiaryMaster.MruMenuItem.FileOpened(System.String)">
+            <summary>
+            Adds a file to the MRU list.
+            Replace the first one if list is full
+            </summary>
+            <param name="file">file to add to list</param>
+        </member>
+        <member name="P:DiaryMaster.MruMenuItem.MRUFiles">
+            <summary>
+            Return the MRU list
+            </summary>
+        </member>
+        <member name="E:DiaryMaster.MruMenuItem.MruClicked">
+            <summary>
+            Fired when a mru menuitem is clicked
+            </summary>
+        </member>
+        <member name="T:DiaryMaster.Settings">
+            <summary>
+            Loads and saves settings
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.Settings.#ctor">
+            <summary>
+            private constructor since all members are static
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Settings.sMruDataFileName">
+            <summary>
+            Name of file to serialize MRU to
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Settings.sApplicationName">
+            <summary>
+            Name of application including version number. Used in titlebars.
+            </summary>
+        </member>
+        <member name="F:DiaryMaster.Settings.bUseEncryption">
+            <summary>
+            Should the diary entries be encrypted in file
+            </summary>
+        </member>
+        <member name="M:DiaryMaster.Settings.isFileWritable(System.String)">
+            <summary>
+            Check if a file exists and is writable
+            </summary>
+            <param name="sFileName">Name of file to check</param>
+            <returns>True if file exists and is writable</returns>
+        </member>
+        <member name="M:DiaryMaster.Settings.WriteDiaryDays(DiaryMaster.DiaryDayDictionary,System.String,System.String)">
+            <summary>
+            write the password dictionary to file
+            </summary>
+            <param name="dicDiaryDays"></param>
+            <param name="sDatelessNote"></param>
+            <param name="sSettingsFileName"></param>
+        </member>
+        <member name="M:DiaryMaster.Settings.GetFirstLine(System.String)">
+            <summary>
+            returns first line of a multiline text
+            </summary>
+            <param name="sNote"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiaryMaster.Settings.ReadDiaryDays(System.String)">
+            <summary>
+            Read diary entries from file
+            </summary>
+            <param name="sSettingsFileName"></param>
+            <returns>Dictionary containing diary entries</returns>
+        </member>
+        <member name="M:DiaryMaster.Settings.ReadDatelessNote(System.String)">
+            <summary>
+            Read diary entries from file
+            </summary>
+            <returns>Dictionary containing diary entries</returns>
+        </member>
+    </members>
+</doc>

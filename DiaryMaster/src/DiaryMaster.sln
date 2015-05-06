@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryMaster", "DiaryMaster\DiaryMaster.csproj", "{F4DB9B01-E03A-4867-B808-6F6CB5C1D61B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryMasterTests", "DiaryMasterTests\DiaryMasterTests.csproj", "{5E654B5B-444A-4CCE-BD98-71573C523824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4DB9B01-E03A-4867-B808-6F6CB5C1D61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DB9B01-E03A-4867-B808-6F6CB5C1D61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DB9B01-E03A-4867-B808-6F6CB5C1D61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DB9B01-E03A-4867-B808-6F6CB5C1D61B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E654B5B-444A-4CCE-BD98-71573C523824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E654B5B-444A-4CCE-BD98-71573C523824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E654B5B-444A-4CCE-BD98-71573C523824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E654B5B-444A-4CCE-BD98-71573C523824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

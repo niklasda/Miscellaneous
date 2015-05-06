@@ -1,0 +1,5 @@
+﻿<flash_project name="Dahlex" version="1">
+    <project_file path="./Dahlex.fla" filetype="fla" profile="" />
+    <project_file path="./Dahlex.html" filetype="html" def_file="true" />
+    <project_file path="./Utils.as" filetype="as" />
+</flash_project>

@@ -1,0 +1,8 @@
+instance names not needed
+
+ox oy dx dy lacks types
+
+
+!= undefines
+
+start matrixen traceas aldrig

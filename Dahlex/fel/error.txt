@@ -1,0 +1,17 @@
+step down
+bomb
+step down 
+bomb
+step down
+...
+
+
+
+
+
+varför finns h i gameArray
+
+
+ibland verkar det gå bra att stå kvar om två eller flera robotar möts på professorns ruta, ibland funkar det inte. Känns som det borde vara antingen eller, eller det ska vara lite av ett chans-moment?
+ 
+/Buggletaren

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html manifest="dahlex.manifest">
+<head>
+    <title>Dahlex for html5</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <link href="dahlex.css" rel="stylesheet" media="screen">
+
+
+    <script type="application/javascript" src="dahlex.js"></script>
+
+</head>
+
+<body id="body" onload="draw_load();">
+<header id="header">
+    <h1>Play Dahlex 1</h1>
+    <h2>Play Dahlex 2</h2>
+    <h3>Play Dahlex 3</h3>
+    <h4>Play Dahlex 4</h4>
+    <h5>Play Dahlex 5</h5>
+</header>
+
+<div>
+    <meter min="0" max="100" value="25">25</meter>
+    <progress max="100" value="25">25</progress>
+</div>
+<div>
+    <canvas id="board" width="400" hight="400">
+        Your browser does not support Canvas.
+    </canvas>
+</div>
+<div>
+    <audio id="granade" controls="true">
+        <source src="Grenade-SoundBible.com-1777900486.wav" type="audio/wav">
+    </audio>
+</div>
+<div id="log">
+    log
+</div>
+
+<footer id="footer">
+    <p>&copy; <time datetime="2011">2011</time> Dahlman Labs </p>
+    <nav>
+        <ul>
+            <li><a href="index.html">main</a></li>
+            <li><a href="scores.html" class="popup">scores</a></li>
+            <li><a href="how.html">how to</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="http://jigsaw.w3.org/css-validator/">css validation</a></li>
+            <li><a href="http://html5.validator.nu/">html5 validation</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script type="application/javascript">
+
+var links=$("a.popup");
+
+links.click(function(event){
+    event.preventDefault();
+    window.open($(this).attr('href'));
+})
+</script>
+</body>
+</html>

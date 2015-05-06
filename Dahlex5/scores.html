@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>scores</title>
+
+    <link href="dahlex.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action="scores.html">
+        <fieldset id="personal">
+            <legend>Information</legend>
+            <ol>
+                <li>
+                    <label>In-Name:</label>
+                    <span id="spanname" contenteditable="true">Inplace name</span>
+                </li>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" autofocus placeholder="Your name">
+                </li>
+                <li>
+                    <label for="password1">Password:</label>
+                    <input type="password" autocomplete="off" id="password1" placeholder="8-10 characters">
+                </li>
+                <li>
+                    <label for="password2">Repeat:</label>
+                    <input type="password" autocomplete="off" id="password2" placeholder="repeat it">
+                </li>
+                <li>
+                    <label for="priority">Priority:</label>
+                    <input type="range" id="priority" min="0" max="100" value="10">
+                </li>
+                <li>
+                    <label for="hours">Hours:</label>
+                    <input type="number" id="hours" min="-2" max="89" value="10">
+                </li>
+                <li>
+                    <label for="start_date">Start date:</label>
+                    <input type="date" id="start_date" value="2010-10-01">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="nd@nida.se">
+                </li>
+                <li>
+                    <label for="site">Site:</label>
+                    <input type="url" id="site" value="http://nida.se">
+                </li>
+                <li>
+                    <label for="colour">Colour:</label>
+                    <input type="color" id="colour" value="#aa0011">
+                </li>
+                <li>
+                    <input type="submit" value="Do it">
+                </li>
+            </ol>
+        </fieldset>
+
+    </form>
+</body>
+</html>

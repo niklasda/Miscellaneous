@@ -1,0 +1,122 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F48B6A9F-35D7-41C2-BC47-A437B18966FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>Castleproxy</AssemblyName>
+    <RootNamespace>Castle.DynamicProxy</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AssertUtil.cs" />
+    <Compile Include="Builder\CodeBuilder\AbstractCodeBuilder.cs" />
+    <Compile Include="Builder\CodeBuilder\AbstractEasyType.cs" />
+    <Compile Include="Builder\CodeBuilder\ConstructorCodeBuilder.cs" />
+    <Compile Include="Builder\CodeBuilder\ConstructorCollection.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyCallable.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyConstructor.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyDefaultConstructor.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyEvent.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyMethod.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyNested.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyProperty.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyRuntimeConstructor.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyRuntimeMethod.cs" />
+    <Compile Include="Builder\CodeBuilder\EasyType.cs" />
+    <Compile Include="Builder\CodeBuilder\EventsCollection.cs" />
+    <Compile Include="Builder\CodeBuilder\IEasyMember.cs" />
+    <Compile Include="Builder\CodeBuilder\MethodCodeBuilder.cs" />
+    <Compile Include="Builder\CodeBuilder\MethodCollection.cs" />
+    <Compile Include="Builder\CodeBuilder\NestedTypeCollection.cs" />
+    <Compile Include="Builder\CodeBuilder\PropertiesCollection.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\AddressOfReferenceExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ArgumentReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\AssignArrayStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\AssignStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\BinaryExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ConditionExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ConstructorInvocationExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ConvertExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\Expression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ExpressionStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\FieldReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\FixedReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\GotoStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\IEmitter.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\IndirectReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\LabelReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\LoadRefArrayElementExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\LocalReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\LockBlockExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\MarkBranchStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\MethodInvocationExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\MethodPointerExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\MethodTokenExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\NewArrayExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\NewInstanceExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\NopStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\NullExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\PopValueFromStackStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\Reference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ReferenceExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ReferencesToObjectArrayExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ReturnReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\ReturnStatement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\SelfReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\Statement.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\TypeReference.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\TypeTokenExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\SimpleAST\VirtualMethodInvocationExpression.cs" />
+    <Compile Include="Builder\CodeBuilder\Utils\ArgumentsUtil.cs" />
+    <Compile Include="Builder\CodeBuilder\Utils\OpCodesDictionary.cs" />
+    <Compile Include="Builder\CodeBuilder\Utils\OpCodeUtil.cs" />
+    <Compile Include="Builder\CodeGenerators\BaseCodeGenerator.cs" />
+    <Compile Include="Builder\CodeGenerators\ClassProxyGenerator.cs" />
+    <Compile Include="Builder\CodeGenerators\InterfaceProxyGenerator.cs" />
+    <Compile Include="Builder\CodeGenerators\ModuleScope.cs" />
+    <Compile Include="Builder\CodeGenerators\ProxyGenerationException.cs" />
+    <Compile Include="Builder\CodeGenerators\Utils\Set.cs" />
+    <Compile Include="Builder\DefaultProxyBuilder.cs" />
+    <Compile Include="Builder\GeneratorContext.cs" />
+    <Compile Include="Builder\IProxyBuilder.cs" />
+    <Compile Include="ICallable.cs" />
+    <Compile Include="IInterceptor.cs" />
+    <Compile Include="IInvocation.cs" />
+    <Compile Include="Invocation\AbstractInvocation.cs" />
+    <Compile Include="Invocation\InterfaceInvocation.cs" />
+    <Compile Include="Invocation\SameClassInvocation.cs" />
+    <Compile Include="ProxyGenerator.cs" />
+    <Compile Include="Serialization\ProxyObjectReference.cs" />
+    <Compile Include="StandardInterceptor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DynProxy.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

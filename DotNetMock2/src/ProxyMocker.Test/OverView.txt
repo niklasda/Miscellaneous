@@ -1,0 +1,111 @@
+
+ProxyMockerSyntaxTests
+	testProxyMockerVoid
+	testProxyMockerArgumentConstraintsFail
+	testProxyMockerBasicArgumentConstraintsFail
+	testProxyMockerArgumentConstraints
+	testProxyMockerToManyArgumentConstraints
+	testProxyMockerToThrow
+	testProxyMockerOrderedDuplicate
+	
+	
+ProxyMockerEngineTests
+	testMockMultipleInterfaces
+	testMockByCalling
+	testProxySyntaxGenerics
+	testProxySimple
+	testProxyGenSimple
+	testMockStrict
+		
+		
+
+
+ProxyMocker<ITestInterface> generator = new ProxyMocker<ITestInterface>();
+	Generates mock-objects of that implements ONE interface
+	TODO: Maybe NOT support more than one interface
+
+generator.UsingMode = ProxyMocker.UsingType.Strict;
+	do we require an expectation or not
+	Dynamic: Expectations are validated, but unexpected calls are ok
+	Loose:  Nothing needs to be expected. Does not allow expections or verify
+	Strict: All calls must be expected, no more no less
+	Probably not implemented
+	TODO: Implement this OR remove functionality
+generator.ExpectationMode = ProxyMocker.ExpectationType.OrderedCounted;         
+	do we require methods to be called in the same order as they are expected
+	OrderedCounted: calls must be used in the same order as they are expected and the same number of times 
+	OrderedUncounted: calls must be used in the same order as they are expected not counted 
+	UnOrderedCounted: calls must be used the same number of times as they are expected. not necessarily in order 
+	UnOrderedUnOrdered: calls must be expected before use. but not in order and not counted
+	Probably not implemented
+	TODO: Implement this OR remove functionality.
+
+
+ITestInterface inter = generator.CreateProxy(); 
+	The mock-object
+	Default returnvalue the functions is 1 (?, by accident!) 
+	TODO: Functions that return values should throw an exception if not configured with expects
+
+
+ISerializable other = generator.CreateProxyFor<ISerializable>();
+	Creates a mock-object of a second interface
+	TODO: Probably delete this functionality
+	
+
+using (generator.StartExpecting()) // config done. start expecting. several blocks allowed
+                // store expectation in a way that support both strict, ordered, counted etc to avoid parameter
+{
+	//Expect code
+}
+Verify not allowed!
+Todo: Stricter implementation, expects not allowed outside this using-block
+	  No using block allowed when Loose 
+
+
+using (generator.StartUsing())  // no expect allowed while using
+{
+	//Code that does the actual calls
+	// + Verify (if not loose)
+}
+Todo: Stricter implementation, mockobjects can't be used outside this using block
+      Verify must be called if Strict
+      Only ONE using block and ONE expect block allowed
+      
+      
+Expects:
+--------
+inter.Voider();                 //Strange syntax because of implementation difficulties of voiders
+generator.ExpectLastCall();
+
+inter.GetInt(33);               //Creates the expect, if no WithArgumentConstraints is set, 
+								//the argumentconstraints is set to be equal to to the input here
+								//if  WithArgumentConstraints is set, the values here are ignored
+generator.ExpectLastCall()      //Adds the latest expect to the expect-list
+    .ToReturn(MyEnum.Tf)            //The value returned when called
+    .SetOutAndRefParametersTo()     // The values return in the out and ref paramters
+    .WithArgumentConstraints(new Equals(2));  //Constrains of the method in paramteters
+
+    .ToThrow(new Exception());    // Method throws an exeption when called
+    .ByCalling(asd, 4)            // The return value is created by an extern function registered by a delegate
+                myLongDel asd = delegate(long pa){return pa;  };
+
+inter.GenericMethod1<string>();   // Supports mock of interface with generic methods 
+
+
+TODO:  ToReturn should work when two expects of the same method exists with two return values 
+	   The same with ToThrow
+	   The expections should be added to a sorted lists, and should be marked as called when called
+
+VerifyException
+Thrown when verify is called and the expect and call-list does not match
+and Thrown when a call in the using block does not match the expectations
+
+Expectationexeption
+Thrown when an expectation declaration is wrong
+
+
+
+
+	
+	
+	

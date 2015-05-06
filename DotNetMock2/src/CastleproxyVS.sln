@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyMocker", "ProxyMocker\ProxyMocker.csproj", "{F23362E8-30B8-456F-BB9C-251649F29463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.DynamicProxy", "Castle.DynamicProxy\Castle.DynamicProxy.csproj", "{F48B6A9F-35D7-41C2-BC47-A437B18966FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.DynamicProxy.Test", "Castle.DynamicProxy.Tests\Castle.DynamicProxy.Test.csproj", "{EF89321E-FB2A-41B6-85B3-794D50A55CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyMocker.Test", "ProxyMocker.Test\ProxyMocker.Test.csproj", "{6772296A-AB4F-49BD-887C-930A443651C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F23362E8-30B8-456F-BB9C-251649F29463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23362E8-30B8-456F-BB9C-251649F29463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23362E8-30B8-456F-BB9C-251649F29463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23362E8-30B8-456F-BB9C-251649F29463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48B6A9F-35D7-41C2-BC47-A437B18966FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48B6A9F-35D7-41C2-BC47-A437B18966FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48B6A9F-35D7-41C2-BC47-A437B18966FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48B6A9F-35D7-41C2-BC47-A437B18966FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF89321E-FB2A-41B6-85B3-794D50A55CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF89321E-FB2A-41B6-85B3-794D50A55CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF89321E-FB2A-41B6-85B3-794D50A55CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF89321E-FB2A-41B6-85B3-794D50A55CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6772296A-AB4F-49BD-887C-930A443651C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6772296A-AB4F-49BD-887C-930A443651C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6772296A-AB4F-49BD-887C-930A443651C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6772296A-AB4F-49BD-887C-930A443651C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

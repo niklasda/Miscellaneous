@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="DotNetMock2" default="build">
+    <property name="basename" value="DotNetMock2"/>
+    <property name="debug" value="true"/>
+	
+	<property name="test.dir" value="ProxyMocker.Test\bin\Debug"/>
+
+	<tstamp/>
+	
+    
+    <target name="clean">
+        <delete>
+            <fileset>
+                <include name="**/bin/*.*"/>
+            </fileset>
+        </delete>
+    </target>
+    
+	<target name="test" depends="build" description="Runs NUnt tests for all built assemblies">
+		<nunit2>
+			<formatter type="Xml" usefile="false"/>
+			<test assemblyname="${test.dir}/ProxyMocker.Test.dll" />
+		</nunit2>
+	</target>
+    
+    <target name="build" >
+        <exec program="msbuild.exe" />
+    </target>
+
+</project>

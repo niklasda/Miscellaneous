@@ -1,0 +1,15 @@
+
+Refactoring
+Döpa om metodnamn och variabelnamn
+Gå igenom koden och göra en "testlist", vad vill vi ska fungera, vilka tester saknas
+
+
+Expectation.GetConstraint: Refactor? Addera mer felkontroll
+ExpectationAction.GetConstraint: Addera mer felkontroll
+Equals.Test/ProxyMockerEngineTests.testMockByCalling:  Equal-Test av 2(int) och 2(long) ska returnera true.
+ProxyMockerInterceptor.PostProceed: Om FindExpectation returnerar false och i Call-läge så ska verify-exception kastas
+
+Uppdatera dynamicproxy till 2.0
+Uppdatera wikin, mer konkreta och uptodate exempel 
+	+ funktionalitetsmatris
+	+ roadmap, vilken funktionalitet är i vilken version

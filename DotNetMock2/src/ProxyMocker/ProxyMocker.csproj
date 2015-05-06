@@ -1,0 +1,63 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F23362E8-30B8-456F-BB9C-251649F29463}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>Proxymockervs</AssemblyName>
+    <RootNamespace>Proxymockervs</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constraints\Anything.cs" />
+    <Compile Include="Constraints\Equals.cs" />
+    <Compile Include="Constraints\IConstraint.cs" />
+    <Compile Include="Exceptions\AssertionException.cs" />
+    <Compile Include="Exceptions\ExpectationException.cs" />
+    <Compile Include="Generation\ClassGenerator.cs" />
+    <Compile Include="Generation\ILUtils.cs" />
+    <Compile Include="Generation\IMockCallHandler.cs" />
+    <Compile Include="Generation\MethodSignature.cs" />
+    <Compile Include="Generation\MockClassBuilder.cs" />
+    <Compile Include="ProxyMocker\ISimpleTest.cs" />
+    <Compile Include="ProxyMocker\ITestInterface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyMocker\Enumerations.cs" />
+    <Compile Include="ProxyMocker\Expectation.cs" />
+    <Compile Include="ProxyMocker\ExpectationAction.cs" />
+    <Compile Include="ProxyMocker\IExpectation.cs" />
+    <Compile Include="ProxyMocker\IMockManager.cs" />
+    <Compile Include="ProxyMocker\MethodExpect.cs" />
+    <Compile Include="ProxyMocker\ProxyMocker.cs" />
+    <Compile Include="ProxyMocker\ProxyMockerInterceptor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Castle.DynamicProxy\Castle.DynamicProxy.csproj">
+      <Project>{F48B6A9F-35D7-41C2-BC47-A437B18966FA}</Project>
+      <Name>Castle.DynamicProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

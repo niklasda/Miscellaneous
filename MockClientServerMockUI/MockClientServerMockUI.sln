@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE395802-EBE2-47AA-8842-4652C38E97D3}"
+	ProjectSection(SolutionItems) = preProject
+		localtestrun.testrunconfig = localtestrun.testrunconfig
+		MockClientServerMockUI.vsmdi = MockClientServerMockUI.vsmdi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F29BEF14-9360-443B-BC21-237B6288BB46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{382977B0-8A74-4207-BEEA-8E895A7AF7F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientUI", "ClientUI\ClientUI.csproj", "{980263D6-34F6-4572-BCA3-AEA84EB16A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{282DF845-0DF9-40AC-A604-81B166154C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{0D41AA8A-F6EF-4008-B8A6-815FAB289C43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicTests", "BusinessLogicTests\BusinessLogicTests.csproj", "{600939D2-B10D-4B5C-9C84-CC41FD5CDAEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessClasses", "BusinessClasses\BusinessClasses.csproj", "{4E2B2A89-7C0A-470D-95B4-C961E87C7499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessClassesTests", "BusinessClassesTests\BusinessClassesTests.csproj", "{69884375-7E2A-4713-8E48-170626DE7DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTests", "ClientTests\ClientTests.csproj", "{619C4DC0-E8E7-4FCA-A07D-09BFB2463A12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTests", "ServerTests\ServerTests.csproj", "{7EFDA854-8C8F-4491-9210-4B46B410A54E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MockClientServerMockUI.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{980263D6-34F6-4572-BCA3-AEA84EB16A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980263D6-34F6-4572-BCA3-AEA84EB16A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980263D6-34F6-4572-BCA3-AEA84EB16A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980263D6-34F6-4572-BCA3-AEA84EB16A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282DF845-0DF9-40AC-A604-81B166154C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282DF845-0DF9-40AC-A604-81B166154C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282DF845-0DF9-40AC-A604-81B166154C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282DF845-0DF9-40AC-A604-81B166154C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D41AA8A-F6EF-4008-B8A6-815FAB289C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D41AA8A-F6EF-4008-B8A6-815FAB289C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D41AA8A-F6EF-4008-B8A6-815FAB289C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D41AA8A-F6EF-4008-B8A6-815FAB289C43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600939D2-B10D-4B5C-9C84-CC41FD5CDAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600939D2-B10D-4B5C-9C84-CC41FD5CDAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600939D2-B10D-4B5C-9C84-CC41FD5CDAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600939D2-B10D-4B5C-9C84-CC41FD5CDAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2B2A89-7C0A-470D-95B4-C961E87C7499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2B2A89-7C0A-470D-95B4-C961E87C7499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2B2A89-7C0A-470D-95B4-C961E87C7499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2B2A89-7C0A-470D-95B4-C961E87C7499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69884375-7E2A-4713-8E48-170626DE7DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69884375-7E2A-4713-8E48-170626DE7DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69884375-7E2A-4713-8E48-170626DE7DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69884375-7E2A-4713-8E48-170626DE7DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619C4DC0-E8E7-4FCA-A07D-09BFB2463A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619C4DC0-E8E7-4FCA-A07D-09BFB2463A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619C4DC0-E8E7-4FCA-A07D-09BFB2463A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619C4DC0-E8E7-4FCA-A07D-09BFB2463A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFDA854-8C8F-4491-9210-4B46B410A54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFDA854-8C8F-4491-9210-4B46B410A54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFDA854-8C8F-4491-9210-4B46B410A54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFDA854-8C8F-4491-9210-4B46B410A54E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{600939D2-B10D-4B5C-9C84-CC41FD5CDAEA} = {F29BEF14-9360-443B-BC21-237B6288BB46}
+		{69884375-7E2A-4713-8E48-170626DE7DEE} = {F29BEF14-9360-443B-BC21-237B6288BB46}
+		{619C4DC0-E8E7-4FCA-A07D-09BFB2463A12} = {F29BEF14-9360-443B-BC21-237B6288BB46}
+		{7EFDA854-8C8F-4491-9210-4B46B410A54E} = {F29BEF14-9360-443B-BC21-237B6288BB46}
+		{980263D6-34F6-4572-BCA3-AEA84EB16A01} = {382977B0-8A74-4207-BEEA-8E895A7AF7F6}
+		{282DF845-0DF9-40AC-A604-81B166154C6A} = {382977B0-8A74-4207-BEEA-8E895A7AF7F6}
+		{0D41AA8A-F6EF-4008-B8A6-815FAB289C43} = {382977B0-8A74-4207-BEEA-8E895A7AF7F6}
+		{4E2B2A89-7C0A-470D-95B4-C961E87C7499} = {382977B0-8A74-4207-BEEA-8E895A7AF7F6}
+	EndGlobalSection
+EndGlobal

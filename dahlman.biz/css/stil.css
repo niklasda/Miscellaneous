@@ -1,0 +1,120 @@
+P  {
+	COLOR : Black;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	FONT-SIZE : x-small;
+	FONT-STYLE : normal;
+	FONT-WEIGHT : normal;
+}
+
+H1  {
+	COLOR : Black;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	FONT-SIZE : x-large;
+	FONT-STYLE : normal;
+	FONT-WEIGHT : bold;
+	TEXT-ALIGN : center;
+}
+
+H2  {
+	FONT-SIZE : large;
+	FONT-WEIGHT : bold;
+	TEXT-ALIGN : center;
+	color : Black;
+	font-family : Verdana, Arial, sans-serif;
+}
+
+H3  {
+	FONT-SIZE : medium;
+	FONT-WEIGHT : bold;
+	color : Black;
+}
+
+A  {
+	COLOR : Black;
+}
+
+A:visited  {
+	COLOR : Navy;
+}
+
+A:active  {
+	COLOR : #666699;
+}
+
+A:hover  {
+	COLOR : Black;
+}
+
+BODY  {
+	BACKGROUND-COLOR : #D7D7E8;
+	COLOR : Black;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	FONT-SIZE : x-small;
+	FONT-STYLE : normal;
+	FONT-WEIGHT : normal;
+}
+
+TABLE  {
+	COLOR : silver;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	FONT-SIZE : x-small;
+	FONT-STYLE : normal;
+	FONT-WEIGHT : normal;
+}
+
+DT  {
+	COLOR : green;
+	FONT-WEIGHT : bold;
+}
+
+TH  {
+	COLOR : black;
+	FONT-WEIGHT : bold;
+	font-family : Verdana, Arial, sans-serif;
+	text-align : center;
+	text-transform : capitalize;
+	font-size : small;
+	background-color : #8888BB;
+}
+
+TD  {
+	COLOR : black;
+	FONT-SIZE : x-small;
+	FONT-WEIGHT : normal;
+	font-family : Verdana, Arial, sans-serif;
+}
+
+HR  {
+	COLOR : #666699;
+}
+
+.smallp  {
+	font-size : xx-small;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	color : Black;
+}
+
+.smallcp  {
+	font-size : xx-small;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	text-align : center;
+	color : Black;
+}
+
+.central  {
+	align : center;
+	text-align : center;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	FONT-SIZE : x-small;
+	FONT-WEIGHT : normal;
+	color : Black;
+}
+
+.bigc  {
+	FONT-SIZE : large;
+	FONT-WEIGHT : bold;
+	TEXT-ALIGN : center;
+	color : Black;
+	font-family : Verdana, Arial, sans-serif;
+}
+

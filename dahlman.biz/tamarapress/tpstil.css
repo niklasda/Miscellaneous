@@ -1,0 +1,52 @@
+
+A  
+{
+	COLOR : white;
+}
+
+A:visited  
+{
+	COLOR : white;
+}
+
+A:active  
+{
+	COLOR : #666699;
+}
+
+A:hover  
+{
+	COLOR : white;
+	TEXT-DECORATION: underline;
+}
+
+.tpbody  
+{
+	BACKGROUND-COLOR : black;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+}
+
+TH  
+{
+	COLOR : black;
+	FONT-WEIGHT : bold;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+	TEXT-ALIGN : center;
+	FONT-SIZE : 12pt;
+	BACKGROUND-COLOR : #fc4204;
+}
+
+TD  
+{
+	COLOR : white;
+	FONT-SIZE : 10pt;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+}
+
+.smallText  
+{
+	COLOR : white;
+	FONT-SIZE : 8pt;
+	FONT-WEIGHT : normal;
+	FONT-FAMILY : Verdana, Arial, sans-serif;
+}

@@ -1,4 +1,5 @@
-﻿using MailSendingService.Interfaces;
+﻿using System;
+using MailSendingService.Interfaces;
 
 namespace MailSendingService.Services
 {
@@ -14,6 +15,7 @@ namespace MailSendingService.Services
         public bool Start()
         {
 	        bool ok = _mailerService.TestMethod();
+            Console.WriteLine($"Success?: {ok}");
 
             return true;
         }

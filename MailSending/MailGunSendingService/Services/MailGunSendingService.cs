@@ -16,7 +16,7 @@ namespace MailGunSendingService.Services
 			m.FromName = "Nida user";
 			m.ToEmail = "nd@sql8r.net";
 			m.ToName = "sql8r User";
-			m.Subject = "Sending with SendGrid is Fun";
+			m.Subject = "Sending with MailGun is NOT Fun";
 			m.TextContent = "and easy to do anywhere, even with C#";
 			m.HtmlContent = "<strong>and easy to do anywhere, even with C#</strong>";
 

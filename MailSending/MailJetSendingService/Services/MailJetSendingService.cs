@@ -17,7 +17,7 @@ namespace MailJetSendingService.Services
 			m.FromName = "Nida user";
 			m.ToEmail = "nd@sql8r.net";
 			m.ToName = "sql8r User";
-			m.Subject = "Sending with SendGrid is Fun";
+			m.Subject = "Sending with MailJet is Fun";
 			m.TextContent = "and easy to do anywhere, even with C#";
 			m.HtmlContent = "<strong>and easy to do anywhere, even with C#</strong>";
 
@@ -35,11 +35,11 @@ namespace MailJetSendingService.Services
 		        {
 		            Resource = Send.Resource,
 		        }
-		        .Property(Send.FromEmail, "nd@nida.se")
-		        .Property(Send.FromName, "Nida Pilot")
-		        .Property(Send.Subject, "Your email flight plan!")
-		        .Property(Send.TextPart, "Dear passenger, welcome to Mailjet! May the delivery force be with you!")
-		        .Property(Send.HtmlPart, "<h3>Dear passenger, welcome to Mailjet!</h3><br />May the delivery force be with you!")
+		        .Property(Send.FromEmail, m.FromEmail)
+		        .Property(Send.FromName, m.FromName)
+		        .Property(Send.Subject, m.Subject)
+		        .Property(Send.TextPart, m.TextContent)
+		        .Property(Send.HtmlPart, m.HtmlContent)
 		        .Property(Send.Recipients, new JArray {
 		            new JObject {
 		                {"Email", "nd@sql8r.net"}

@@ -3,7 +3,7 @@ using MailGunSendingService.Interfaces;
 
 namespace MailGunSendingService.Services
 {
-    public class MailGunSendingTopService : IMailSendingTopService
+    public class MailGunSendingTopService : IMailGunSendingTopService
 	{
         public MailGunSendingTopService(IMailGunSendingService svc)
         {

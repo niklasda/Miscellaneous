@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using MailSendingService.Interfaces;
 using MailSendingService.Models;
 using SendGrid;
@@ -34,9 +35,10 @@ namespace MailSendingService.Services
 			var htmlContent = m.HtmlContent;
 
 			var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
-			var response = client.SendEmailAsync(msg).Result;
 
-			return response.StatusCode == HttpStatusCode.Accepted;
+			var r = client.SendEmailAsync(msg).Result;
+		    Console.WriteLine(r.StatusCode.ToString());
+            return r.StatusCode == HttpStatusCode.Accepted;
 		}
 	}
 }

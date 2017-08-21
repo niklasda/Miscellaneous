@@ -14,7 +14,7 @@ namespace MailGunSendingService.Mappings
                 x.WithDefaultConventions();
             });
 
-            For<IMailSendingTopService>().Use<MailGunSendingTopService>();
+            For<IMailGunSendingTopService>().Use<MailGunSendingTopService>();
         }
     }
 }

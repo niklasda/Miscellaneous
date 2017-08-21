@@ -23,24 +23,7 @@ namespace MailGunSendingService.Services
 			return TestSendMethod(m);
 		}
 
-	/*	private bool TestSendMethod(MailDto m)
-		{
-			var apiKey = "?";
-			var client = new SendGridClient(apiKey);
-
-			var from = new EmailAddress(m.FromEmail, m.FromName);
-			var subject = m.Subject;
-			var to = new EmailAddress(m.ToEmail, m.ToName);
-			var plainTextContent = m.TextContent;
-			var htmlContent = m.HtmlContent;
-
-			var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
-			var response = client.SendEmailAsync(msg).Result;
-
-			return response.StatusCode == HttpStatusCode.Accepted;
-		}*/
-
-	    private bool TestSendMethod(MailDto m)
+        private bool TestSendMethod(MailDto m)
 	    {
 	        var apiKey = "?";
 
@@ -59,6 +42,7 @@ namespace MailGunSendingService.Services
 	        request.Method = Method.POST;
 
             var r =  client.Execute(request);
+            Console.WriteLine(r.StatusCode.ToString());
 	        return r.StatusCode == HttpStatusCode.Accepted;
 	    }
     }

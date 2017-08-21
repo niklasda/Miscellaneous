@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("Release")]
 #endif
 [assembly: AssemblyCompany("nida")]
-[assembly: AssemblyProduct("MailGunSendingService")]
+[assembly: AssemblyProduct("MailSendingService")]
 [assembly: AssemblyCopyright("Copyright © 2017 nida")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

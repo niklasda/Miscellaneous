@@ -1,7 +1,7 @@
 ﻿
 namespace MailGunSendingService.Interfaces
 {
-    public interface IMailSendingTopService
+    public interface IMailGunSendingTopService
 	{
 		bool Start();
 		bool Stop();

@@ -16,7 +16,7 @@ namespace MailGunSendingService
                 {
                     c.UseStructureMap(container);
 
-                    c.Service<IMailSendingTopService>(s =>
+                    c.Service<IMailGunSendingTopService>(s =>
                     {
                         s.ConstructUsingStructureMap();
 

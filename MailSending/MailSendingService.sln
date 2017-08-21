@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailGunSendingService", "MailGunSendingService\MailGunSendingService.csproj", "{B1FD9AD7-6B8A-4741-8C33-36F9D4DD949E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailJetSendingService", "MailJetSendingService\MailJetSendingService.csproj", "{2A05884A-32D3-43AA-92A1-9607A7634B5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B1FD9AD7-6B8A-4741-8C33-36F9D4DD949E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1FD9AD7-6B8A-4741-8C33-36F9D4DD949E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1FD9AD7-6B8A-4741-8C33-36F9D4DD949E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A05884A-32D3-43AA-92A1-9607A7634B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A05884A-32D3-43AA-92A1-9607A7634B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A05884A-32D3-43AA-92A1-9607A7634B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A05884A-32D3-43AA-92A1-9607A7634B5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

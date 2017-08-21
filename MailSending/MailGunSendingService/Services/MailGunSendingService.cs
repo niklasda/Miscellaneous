@@ -42,9 +42,11 @@ namespace MailGunSendingService.Services
 
 	    private bool TestSendMethod(MailDto m)
 	    {
-	        RestClient client = new RestClient();
+	        var apiKey = "?";
+
+            RestClient client = new RestClient();
 	        client.BaseUrl = new Uri("https://api.mailgun.net/v3");
-	        client.Authenticator = new HttpBasicAuthenticator("api", "YOUR_API_KEY");
+	        client.Authenticator = new HttpBasicAuthenticator("api", apiKey);
 
 	        RestRequest request = new RestRequest();
 	        request.AddParameter("domain", "nida.se", ParameterType.UrlSegment);

@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Dahlex
 {
-    [CLSCompliant(false)]
+    [CLSCompliant(true)]
     public interface IBoard
     {
         BoardPosition GetPosition(int x, int y);

@@ -7,7 +7,7 @@ using Dahlex.Theming;
 
 namespace Dahlex
 {
-    [CLSCompliant(false)]
+    [CLSCompliant(true)]
     public interface IDahlexView
     {
         void AddLineToLog(string log);

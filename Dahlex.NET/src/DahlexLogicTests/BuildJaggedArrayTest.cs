@@ -21,10 +21,10 @@ namespace TypeBuilderTests1
             ModuleBuilder myModule = myAsmBuilder.DefineDynamicModule("DynamicModule1", "DynamicAsm1.dll");
 
             TypeBuilder myTypeBld = myModule.DefineType(
-                "DynamicType1", TypeAttributes.Public, typeof(Object), new Type[] { typeof(ITypeBuilderTests1) });
+                "DynamicType1", TypeAttributes.Public, typeof(Object), new [] { typeof(ITypeBuilderTests1) });
 
             MethodBuilder myMthdBld = myTypeBld.DefineMethod(
-                "DrawBoard1", MethodAttributes.Public | MethodAttributes.Virtual, typeof(void), new Type[] { typeof(int[][]) });
+                "DrawBoard1", MethodAttributes.Public | MethodAttributes.Virtual, typeof(void), new [] { typeof(int[][]) });
 
             ILGenerator ILout = myMthdBld.GetILGenerator();
             ILout.Emit(OpCodes.Pop);

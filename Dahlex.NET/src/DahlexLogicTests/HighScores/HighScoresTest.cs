@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using Dahlex;
 using Dahlex.HighScores;
 using Dahlex.Settings;
 using NUnit.Framework;

@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using Dahlex;
 using Dahlex.Settings;
-using Dahlex.Theming;
 
 namespace DahlexLogic
 {
@@ -28,7 +27,7 @@ namespace DahlexLogic
             miAddHeap.Tag = p;
             foreach(int hId in heapIndexes)
             {
-                MenuItem miSubHeap = miAddHeap.MenuItems.Add("heap_" + hId, new EventHandler(miAddHeap_Click));
+                MenuItem miSubHeap = miAddHeap.MenuItems.Add("heap_" + hId, miAddHeap_Click);
                 miSubHeap.Tag = hId;
             }
             
@@ -36,7 +35,7 @@ namespace DahlexLogic
             miAddRobot.Tag = p;
             foreach (int rId in robotIndexes)
             {
-                MenuItem miSubRobot = miAddRobot.MenuItems.Add("robot_"+ rId, new EventHandler(miAddRobot_Click));
+                MenuItem miSubRobot = miAddRobot.MenuItems.Add("robot_"+ rId, miAddRobot_Click);
                 miSubRobot.Tag = rId;
             }
 
@@ -44,7 +43,7 @@ namespace DahlexLogic
             miAddProfessor.Tag = p;
             foreach (int pId in professorIndexes)
             {
-                MenuItem miSubProfessor = miAddProfessor.MenuItems.Add("professor_" + pId, new EventHandler(miAddProfessor_Click));
+                MenuItem miSubProfessor = miAddProfessor.MenuItems.Add("professor_" + pId, miAddProfessor_Click);
                 miSubProfessor.Tag = pId;
             }
             

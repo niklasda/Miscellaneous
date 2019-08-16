@@ -1,8 +1,6 @@
 using System;
 using System.Drawing;
-//using Dahlex.Animation;
 using Dahlex.HighScores;
-using Dahlex.Settings;
 using Dahlex.Theming;
 
 namespace Dahlex

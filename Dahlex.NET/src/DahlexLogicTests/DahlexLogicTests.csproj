@@ -83,7 +83,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardDefinitionTest.cs" />
     <Compile Include="BuildJaggedArrayTest.cs" />
     <Compile Include="BuildMatrixTest.cs" />
     <Compile Include="DahlexControllerTests.cs" />
